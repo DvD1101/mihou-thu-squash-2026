@@ -1,0 +1,16 @@
+services:
+  mihou:
+    build: .
+    container_name: mihou-squash-2026
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      PORT: "8787"
+      HOST: "0.0.0.0"
+      DATA_DIR: "/data"
+    volumes:
+      - mihou-data:/data
+
+volumes:
+  mihou-data:

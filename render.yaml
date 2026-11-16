@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: mihou-squash-league
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: DATA_DIR
+        value: /data
+      - key: ADMIN_TOKEN
+        generateValue: true
+    disk:
+      name: mihou-event-data
+      mountPath: /data
+      sizeGB: 1

@@ -1,0 +1,7096 @@
+{
+  "meta": {
+    "eventId": "mihou-nine-school-2026",
+    "name": "清华大学九系壁球俱乐部联赛",
+    "date": "2026-11-21",
+    "timeLabel": "09:00–12:00 / 14:00–18:00",
+    "venue": "清华大学北体育馆",
+    "courts": 4,
+    "organizer": "MiHoo咪呼壁球工作室",
+    "phase": "finished",
+    "version": 0,
+    "updatedAt": "2026-11-16T09:43:02.838Z",
+    "createdAt": "2026-11-16T09:43:02.838Z",
+    "isDemo": true
+  },
+  "units": [
+    {
+      "id": "u_cs",
+      "name": "计算机系",
+      "aliases": [
+        "计算机系",
+        "计算机科学与技术系"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_arch",
+      "name": "建筑学院",
+      "aliases": [
+        "建筑学院",
+        "建筑系"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_civil",
+      "name": "土木建管系",
+      "aliases": [
+        "土木工程系",
+        "建设管理系",
+        "土木建管系"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_env",
+      "name": "环境学院",
+      "aliases": [
+        "环境学院",
+        "环境科学与工程系"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_me",
+      "name": "机械工程系",
+      "aliases": [
+        "机械工程系",
+        "机械系"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_energy",
+      "name": "能源与动力工程系",
+      "aliases": [
+        "能源与动力工程系",
+        "能动系"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_med",
+      "name": "医学院·万科卫健学院",
+      "aliases": [
+        "医学院",
+        "万科公共卫生与健康学院",
+        "万科卫健学院",
+        "医学院·万科卫健学院"
+      ],
+      "active": true
+    },
+    {
+      "id": "u_sem",
+      "name": "经济管理学院",
+      "aliases": [
+        "经济管理学院",
+        "经管学院"
+      ],
+      "active": true
+    }
+  ],
+  "players": [
+    {
+      "id": "p_daabd1dbc750d5397b2aad27",
+      "name": "孙睿泽",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_066a1b305cd1e20b47fbe032",
+      "name": "李沐晴",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_9be87223e97f8d16b1199bff",
+      "name": "周俊逸",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "new_men",
+      "alumni": true,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_704156f424df4c4a7100ac9e",
+      "name": "张雨桐",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_ff1ed5ed5fbfd5d6a9bdeff8",
+      "name": "杨思远",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_c8a8f1f572e389915ed32e2c",
+      "name": "吴云帆",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_fca5c44f9d4fc0bc2573bda2",
+      "name": "何清越",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_7e9dfcefaa3fb7ab504aea9b",
+      "name": "赵皓月",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_f5a9fefea65b1bc0b650246a",
+      "name": "黄晨阳",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_92ee72b80f56b7da0f97d73f",
+      "name": "李云舒",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.843Z"
+    },
+    {
+      "id": "p_42942efb6349ec7477bd76ea",
+      "name": "赵暖阳",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_ef0336904e417f73b6bf6948",
+      "name": "周嘉宁",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_ef394d08ca0e3db42baaa47e",
+      "name": "胡若溪",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_98317e14be07ec2edece0e98",
+      "name": "孙书航",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_614482eabdb91ec3d8e91a7c",
+      "name": "杨清和",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_a91e9080c45f21d29eca49d4",
+      "name": "高晨阳",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_95b500ee01e13ee1403e1375",
+      "name": "徐弘文",
+      "department": "美术学院",
+      "unitId": null,
+      "pointsUnitId": null,
+      "group": "new_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_e96447b5becd99afbeb071e7",
+      "name": "吴知夏",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_5da16f2779890cdbbc829cf1",
+      "name": "胡沐阳",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_56d35fd38bba999b7995a15e",
+      "name": "朱泽宇",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "new_women",
+      "alumni": true,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_5cbc90812d3008604c0fa350",
+      "name": "杨清越",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_a31aeb7fae54ab54fc5bfa46",
+      "name": "郭书航",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_d5e1580b6e5d08b0f0b0f2ab",
+      "name": "何子涵",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_14ee21a1ae244b7aa2883dd3",
+      "name": "罗俊逸",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_12c60d66a7c7a649294e70a0",
+      "name": "黄思源",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_0eb19705091316353afd0e21",
+      "name": "黄清和",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_e6356023f036d73ed1c5df59",
+      "name": "郭以宁",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_b1280e55820656e9f8a9b2be",
+      "name": "吴明轩",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_988c8ecc9a1fafdc1fabb650",
+      "name": "孙致远",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_ab662c9545cb7749605f85d6",
+      "name": "刘青禾",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_aeedd4303d1827c423acabbc",
+      "name": "高思源",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_812563e769711f84516b4f37",
+      "name": "刘致远",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_20b816fd719079cf50e730ba",
+      "name": "胡清越",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_af45971ef8a135c62f945419",
+      "name": "罗以宁",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_65c2a98e008a32afffc4c27d",
+      "name": "高知夏",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_7cb8c4db16b28a4668a1c53f",
+      "name": "罗睿泽",
+      "department": "美术学院",
+      "unitId": null,
+      "pointsUnitId": null,
+      "group": "new_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_e9191d47ac86009256aba426",
+      "name": "杨亦凡",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_91f5a72c5787dfdbeebed51b",
+      "name": "赵雨桐",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_bf5d943e67f9945b42fd28e6",
+      "name": "孙皓月",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "advanced_men",
+      "alumni": true,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_feaad7c295ff055809ecd878",
+      "name": "高文博",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_af74c4d7e507f8b6b21b92b4",
+      "name": "何皓月",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_51e6e5f3cf364eafff8eea6a",
+      "name": "黄映雪",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_70a803e518a820179aed1411",
+      "name": "高诗雨",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_8af7186eabd9d555aa44d917",
+      "name": "胡清和",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_a1f4f363349306b6f847686a",
+      "name": "李欣怡",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_b9f3a7495670e58afaaa75f2",
+      "name": "林知远",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_baf6f3d5cd0b93c674f3dfcf",
+      "name": "何亦凡",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_83076c66f9cf35ef6dfbff1a",
+      "name": "黄云帆",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_7d011f4ae0d2b33f78195ea1",
+      "name": "徐诗雨",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_3bbff6257ad8a922a3af2742",
+      "name": "朱雨桐",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_b0a8a86e48b1a30786986404",
+      "name": "王和风",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_9cf37943fd1f87ef4868adac",
+      "name": "陈欣怡",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_00d85007aeb98d59ae609471",
+      "name": "周亦凡",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_d8cfce1e713f499f7951f88a",
+      "name": "黄弘毅",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_d8160b22a7eb68670972303d",
+      "name": "何泽宇",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_62a4ac11d358592dadde3089",
+      "name": "徐书航",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_d3b85c982edde0b0b1d83683",
+      "name": "何沐阳",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_72fa858f334aabb021845081",
+      "name": "罗亦凡",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_c6f01ca216bce64ddf14b877",
+      "name": "陈睿泽",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_90941e1ed51ff277403f331f",
+      "name": "孙映雪",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "advanced_men",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_dcd31bcbac08f6cdd79302eb",
+      "name": "李书航",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_dc99be274b39fff3a56d7dc2",
+      "name": "郭可心",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_1ff1c3026575a9d678ed9add",
+      "name": "罗怀瑾",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "advanced_women",
+      "alumni": true,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_5872a9e2e600fd8b0d88c169",
+      "name": "胡景行",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_b9064b1ed5ff0508c71e2459",
+      "name": "朱嘉宁",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_8a832465c86c3eb0fd2bd98d",
+      "name": "刘清和",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_2cf55907e321c2e0ea9f451e",
+      "name": "何诗雨",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_020071e858d878d0d271b68a",
+      "name": "王一诺",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": true,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_323bb6e0e5da2dd3f17f34b3",
+      "name": "马乐彤",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_199e7d00feb5a4a7e76da909",
+      "name": "黄睿泽",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_333ef264bc28dfc7b7fe238a",
+      "name": "李云帆",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_97a2fe094e2f2f66036f8fba",
+      "name": "林若溪",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_bb385b83861d8ff6de37a8b3",
+      "name": "李青禾",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_57417a5b565fb725b4de7f15",
+      "name": "林语晨",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_30438df0db7230db3cad4bf1",
+      "name": "赵书瑶",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_4c9853fa80320549f3b90700",
+      "name": "陈可心",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_1aebe27735a1c68d3ffd35c6",
+      "name": "杨云帆",
+      "department": "计算机系",
+      "unitId": "u_cs",
+      "pointsUnitId": "u_cs",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_c7799f3fc7b86a1616756146",
+      "name": "周思远",
+      "department": "建筑学院",
+      "unitId": "u_arch",
+      "pointsUnitId": "u_arch",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_4710ac1c75d142a50ec82d2c",
+      "name": "张云帆",
+      "department": "土木工程系",
+      "unitId": "u_civil",
+      "pointsUnitId": "u_civil",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_ba3f5d527288adb12ad3eede",
+      "name": "徐承宇",
+      "department": "环境学院",
+      "unitId": "u_env",
+      "pointsUnitId": "u_env",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_2a2e9964b21959cdf635bdeb",
+      "name": "陈锦程",
+      "department": "机械工程系",
+      "unitId": "u_me",
+      "pointsUnitId": "u_me",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_b2d6fec9c802ad2f26701416",
+      "name": "林晨阳",
+      "department": "能源与动力工程系",
+      "unitId": "u_energy",
+      "pointsUnitId": "u_energy",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_0ceea808962e163b4d1ca242",
+      "name": "马沐晴",
+      "department": "医学院",
+      "unitId": "u_med",
+      "pointsUnitId": "u_med",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    },
+    {
+      "id": "p_ab92fefef5707ef13dd1fe5c",
+      "name": "林诗雨",
+      "department": "经济管理学院",
+      "unitId": "u_sem",
+      "pointsUnitId": "u_sem",
+      "group": "advanced_women",
+      "alumni": false,
+      "seed": false,
+      "createdAt": "2026-11-16T09:43:02.844Z"
+    }
+  ],
+  "draws": {
+    "new_men": {
+      "status": "locked",
+      "groups": [
+        {
+          "id": "new_men_g1",
+          "name": "A组",
+          "playerIds": [
+            "p_f5a9fefea65b1bc0b650246a",
+            "p_95b500ee01e13ee1403e1375",
+            "p_92ee72b80f56b7da0f97d73f",
+            "p_98317e14be07ec2edece0e98",
+            "p_ff1ed5ed5fbfd5d6a9bdeff8"
+          ]
+        },
+        {
+          "id": "new_men_g2",
+          "name": "B组",
+          "playerIds": [
+            "p_daabd1dbc750d5397b2aad27",
+            "p_ef0336904e417f73b6bf6948",
+            "p_704156f424df4c4a7100ac9e",
+            "p_614482eabdb91ec3d8e91a7c"
+          ]
+        },
+        {
+          "id": "new_men_g3",
+          "name": "C组",
+          "playerIds": [
+            "p_066a1b305cd1e20b47fbe032",
+            "p_c8a8f1f572e389915ed32e2c",
+            "p_42942efb6349ec7477bd76ea",
+            "p_9be87223e97f8d16b1199bff"
+          ]
+        },
+        {
+          "id": "new_men_g4",
+          "name": "D组",
+          "playerIds": [
+            "p_fca5c44f9d4fc0bc2573bda2",
+            "p_ef394d08ca0e3db42baaa47e",
+            "p_7e9dfcefaa3fb7ab504aea9b",
+            "p_a91e9080c45f21d29eca49d4"
+          ]
+        }
+      ],
+      "knockoutCreated": true,
+      "previewedAt": "2026-11-16T09:43:02.845Z",
+      "lockedAt": "2026-11-16T09:43:02.846Z",
+      "groupMatchCount": 28
+    },
+    "new_women": {
+      "status": "locked",
+      "groups": [
+        {
+          "id": "new_women_g1",
+          "name": "A组",
+          "playerIds": [
+            "p_b1280e55820656e9f8a9b2be",
+            "p_5cbc90812d3008604c0fa350",
+            "p_e6356023f036d73ed1c5df59",
+            "p_d5e1580b6e5d08b0f0b0f2ab",
+            "p_988c8ecc9a1fafdc1fabb650"
+          ]
+        },
+        {
+          "id": "new_women_g2",
+          "name": "B组",
+          "playerIds": [
+            "p_65c2a98e008a32afffc4c27d",
+            "p_aeedd4303d1827c423acabbc",
+            "p_e96447b5becd99afbeb071e7",
+            "p_20b816fd719079cf50e730ba",
+            "p_a31aeb7fae54ab54fc5bfa46"
+          ]
+        },
+        {
+          "id": "new_women_g3",
+          "name": "C组",
+          "playerIds": [
+            "p_7cb8c4db16b28a4668a1c53f",
+            "p_5da16f2779890cdbbc829cf1",
+            "p_14ee21a1ae244b7aa2883dd3",
+            "p_ab662c9545cb7749605f85d6",
+            "p_56d35fd38bba999b7995a15e"
+          ]
+        },
+        {
+          "id": "new_women_g4",
+          "name": "D组",
+          "playerIds": [
+            "p_12c60d66a7c7a649294e70a0",
+            "p_812563e769711f84516b4f37",
+            "p_0eb19705091316353afd0e21",
+            "p_af45971ef8a135c62f945419"
+          ]
+        }
+      ],
+      "knockoutCreated": true,
+      "previewedAt": "2026-11-16T09:43:02.846Z",
+      "lockedAt": "2026-11-16T09:43:02.846Z",
+      "groupMatchCount": 36
+    },
+    "advanced_men": {
+      "status": "locked",
+      "seedSlots": [
+        "p_91f5a72c5787dfdbeebed51b",
+        "p_70a803e518a820179aed1411",
+        "p_51e6e5f3cf364eafff8eea6a",
+        "p_e9191d47ac86009256aba426",
+        "p_bf5d943e67f9945b42fd28e6",
+        "p_af74c4d7e507f8b6b21b92b4",
+        "p_feaad7c295ff055809ecd878",
+        "p_8af7186eabd9d555aa44d917"
+      ],
+      "qualifiers": [
+        [
+          "p_b0a8a86e48b1a30786986404",
+          "p_7d011f4ae0d2b33f78195ea1"
+        ],
+        [
+          "p_b9f3a7495670e58afaaa75f2",
+          "p_9cf37943fd1f87ef4868adac"
+        ],
+        [
+          "p_72fa858f334aabb021845081",
+          "p_90941e1ed51ff277403f331f"
+        ],
+        [
+          "p_00d85007aeb98d59ae609471",
+          "p_d8cfce1e713f499f7951f88a"
+        ],
+        [
+          "p_c6f01ca216bce64ddf14b877",
+          "p_62a4ac11d358592dadde3089"
+        ],
+        [
+          "p_d3b85c982edde0b0b1d83683",
+          "p_a1f4f363349306b6f847686a"
+        ],
+        [
+          "p_d8160b22a7eb68670972303d",
+          "p_3bbff6257ad8a922a3af2742"
+        ],
+        [
+          "p_83076c66f9cf35ef6dfbff1a",
+          "p_baf6f3d5cd0b93c674f3dfcf"
+        ]
+      ],
+      "generated": true,
+      "previewedAt": "2026-11-16T09:43:02.846Z",
+      "lockedAt": "2026-11-16T09:43:02.847Z"
+    },
+    "advanced_women": {
+      "status": "locked",
+      "seedSlots": [
+        "p_dc99be274b39fff3a56d7dc2",
+        "p_2cf55907e321c2e0ea9f451e",
+        "p_8a832465c86c3eb0fd2bd98d",
+        "p_dcd31bcbac08f6cdd79302eb",
+        "p_1ff1c3026575a9d678ed9add",
+        "p_b9064b1ed5ff0508c71e2459",
+        "p_5872a9e2e600fd8b0d88c169",
+        "p_020071e858d878d0d271b68a"
+      ],
+      "qualifiers": [
+        [
+          "p_30438df0db7230db3cad4bf1",
+          "p_bb385b83861d8ff6de37a8b3"
+        ],
+        [
+          "p_199e7d00feb5a4a7e76da909",
+          "p_4c9853fa80320549f3b90700"
+        ],
+        [
+          "p_b2d6fec9c802ad2f26701416",
+          "p_ab92fefef5707ef13dd1fe5c"
+        ],
+        [
+          "p_1aebe27735a1c68d3ffd35c6",
+          "p_c7799f3fc7b86a1616756146"
+        ],
+        [
+          "p_0ceea808962e163b4d1ca242",
+          "p_ba3f5d527288adb12ad3eede"
+        ],
+        [
+          "p_2a2e9964b21959cdf635bdeb",
+          "p_323bb6e0e5da2dd3f17f34b3"
+        ],
+        [
+          "p_4710ac1c75d142a50ec82d2c",
+          "p_57417a5b565fb725b4de7f15"
+        ],
+        [
+          "p_97a2fe094e2f2f66036f8fba",
+          "p_333ef264bc28dfc7b7fe238a"
+        ]
+      ],
+      "generated": true,
+      "previewedAt": "2026-11-16T09:43:02.847Z",
+      "lockedAt": "2026-11-16T09:43:02.847Z"
+    }
+  },
+  "matches": [
+    {
+      "id": "m_b0d99eba783d9f3704db887c",
+      "code": "NM-A组-01",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_f5a9fefea65b1bc0b650246a"
+        },
+        {
+          "type": "player",
+          "playerId": "p_95b500ee01e13ee1403e1375"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_f5a9fefea65b1bc0b650246a",
+      "loserId": "p_95b500ee01e13ee1403e1375",
+      "completedAt": "2026-11-16T09:43:02.847Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:00:00+08:00",
+        "endAt": "2026-11-21T09:07:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_28390271450cee15b465fdcc",
+      "code": "NM-A组-02",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_f5a9fefea65b1bc0b650246a"
+        },
+        {
+          "type": "player",
+          "playerId": "p_92ee72b80f56b7da0f97d73f"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_f5a9fefea65b1bc0b650246a",
+      "loserId": "p_92ee72b80f56b7da0f97d73f",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:17:00+08:00",
+        "endAt": "2026-11-21T09:24:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9d79b27eb60562bea839181b",
+      "code": "NM-A组-03",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_f5a9fefea65b1bc0b650246a"
+        },
+        {
+          "type": "player",
+          "playerId": "p_98317e14be07ec2edece0e98"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_f5a9fefea65b1bc0b650246a",
+      "loserId": "p_98317e14be07ec2edece0e98",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:34:00+08:00",
+        "endAt": "2026-11-21T09:41:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e3d23f75ab818d3ed3e0a6bd",
+      "code": "NM-A组-04",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_f5a9fefea65b1bc0b650246a"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ff1ed5ed5fbfd5d6a9bdeff8"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_f5a9fefea65b1bc0b650246a",
+      "loserId": "p_ff1ed5ed5fbfd5d6a9bdeff8",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:51:00+08:00",
+        "endAt": "2026-11-21T09:58:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_34d6adb7fc50b2cbe2a9339b",
+      "code": "NM-A组-05",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 4,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_95b500ee01e13ee1403e1375"
+        },
+        {
+          "type": "player",
+          "playerId": "p_92ee72b80f56b7da0f97d73f"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_95b500ee01e13ee1403e1375",
+      "loserId": "p_92ee72b80f56b7da0f97d73f",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:41:00+08:00",
+        "endAt": "2026-11-21T09:48:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_95b563f9b52c2a1bbffd4671",
+      "code": "NM-A组-06",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 5,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_95b500ee01e13ee1403e1375"
+        },
+        {
+          "type": "player",
+          "playerId": "p_98317e14be07ec2edece0e98"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_95b500ee01e13ee1403e1375",
+      "loserId": "p_98317e14be07ec2edece0e98",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T10:08:00+08:00",
+        "endAt": "2026-11-21T10:15:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_6314307c223a7a4a451ca06d",
+      "code": "NM-A组-07",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 6,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_95b500ee01e13ee1403e1375"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ff1ed5ed5fbfd5d6a9bdeff8"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_95b500ee01e13ee1403e1375",
+      "loserId": "p_ff1ed5ed5fbfd5d6a9bdeff8",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T10:25:00+08:00",
+        "endAt": "2026-11-21T10:32:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_25774253acc9ff73610947e2",
+      "code": "NM-A组-08",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 7,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_92ee72b80f56b7da0f97d73f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_98317e14be07ec2edece0e98"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_92ee72b80f56b7da0f97d73f",
+      "loserId": "p_98317e14be07ec2edece0e98",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T10:32:00+08:00",
+        "endAt": "2026-11-21T10:39:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_4bfa15ea721e2f46b10e24f5",
+      "code": "NM-A组-09",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 8,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_92ee72b80f56b7da0f97d73f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ff1ed5ed5fbfd5d6a9bdeff8"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_92ee72b80f56b7da0f97d73f",
+      "loserId": "p_ff1ed5ed5fbfd5d6a9bdeff8",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T10:49:00+08:00",
+        "endAt": "2026-11-21T10:56:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_b84ea48c1bc5dd28a21e075d",
+      "code": "NM-A组-10",
+      "group": "new_men",
+      "groupId": "new_men_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 9,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_98317e14be07ec2edece0e98"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ff1ed5ed5fbfd5d6a9bdeff8"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_98317e14be07ec2edece0e98",
+      "loserId": "p_ff1ed5ed5fbfd5d6a9bdeff8",
+      "completedAt": "2026-11-16T09:43:02.848Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T11:06:00+08:00",
+        "endAt": "2026-11-21T11:13:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_c484fcd151a40ab378810031",
+      "code": "NM-B组-11",
+      "group": "new_men",
+      "groupId": "new_men_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 10,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_daabd1dbc750d5397b2aad27"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ef0336904e417f73b6bf6948"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_daabd1dbc750d5397b2aad27",
+      "loserId": "p_ef0336904e417f73b6bf6948",
+      "completedAt": "2026-11-16T09:43:02.849Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:07:00+08:00",
+        "endAt": "2026-11-21T09:14:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_94f07d5d8a295a4aec9d936b",
+      "code": "NM-B组-12",
+      "group": "new_men",
+      "groupId": "new_men_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 11,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_daabd1dbc750d5397b2aad27"
+        },
+        {
+          "type": "player",
+          "playerId": "p_704156f424df4c4a7100ac9e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_daabd1dbc750d5397b2aad27",
+      "loserId": "p_704156f424df4c4a7100ac9e",
+      "completedAt": "2026-11-16T09:43:02.849Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:24:00+08:00",
+        "endAt": "2026-11-21T09:31:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_2fd2d0a384c4bca1fb827043",
+      "code": "NM-B组-13",
+      "group": "new_men",
+      "groupId": "new_men_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 12,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_daabd1dbc750d5397b2aad27"
+        },
+        {
+          "type": "player",
+          "playerId": "p_614482eabdb91ec3d8e91a7c"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_daabd1dbc750d5397b2aad27",
+      "loserId": "p_614482eabdb91ec3d8e91a7c",
+      "completedAt": "2026-11-16T09:43:02.849Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T10:15:00+08:00",
+        "endAt": "2026-11-21T10:22:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_237b5e7d12bb2a1f26cd26f7",
+      "code": "NM-B组-14",
+      "group": "new_men",
+      "groupId": "new_men_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 13,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_ef0336904e417f73b6bf6948"
+        },
+        {
+          "type": "player",
+          "playerId": "p_704156f424df4c4a7100ac9e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_ef0336904e417f73b6bf6948",
+      "loserId": "p_704156f424df4c4a7100ac9e",
+      "completedAt": "2026-11-16T09:43:02.849Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T10:56:00+08:00",
+        "endAt": "2026-11-21T11:03:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_7acf6c6dcb8d8461bfe2eca2",
+      "code": "NM-B组-15",
+      "group": "new_men",
+      "groupId": "new_men_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 14,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_ef0336904e417f73b6bf6948"
+        },
+        {
+          "type": "player",
+          "playerId": "p_614482eabdb91ec3d8e91a7c"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_ef0336904e417f73b6bf6948",
+      "loserId": "p_614482eabdb91ec3d8e91a7c",
+      "completedAt": "2026-11-16T09:43:02.849Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T11:13:00+08:00",
+        "endAt": "2026-11-21T11:20:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_f988c89b18c4db9f19ad6546",
+      "code": "NM-B组-16",
+      "group": "new_men",
+      "groupId": "new_men_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 15,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_704156f424df4c4a7100ac9e"
+        },
+        {
+          "type": "player",
+          "playerId": "p_614482eabdb91ec3d8e91a7c"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_704156f424df4c4a7100ac9e",
+      "loserId": "p_614482eabdb91ec3d8e91a7c",
+      "completedAt": "2026-11-16T09:43:02.849Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T11:30:00+08:00",
+        "endAt": "2026-11-21T11:37:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_1dd9e7babafe7da7b83a5574",
+      "code": "NM-C组-17",
+      "group": "new_men",
+      "groupId": "new_men_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 16,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_066a1b305cd1e20b47fbe032"
+        },
+        {
+          "type": "player",
+          "playerId": "p_c8a8f1f572e389915ed32e2c"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_066a1b305cd1e20b47fbe032",
+      "loserId": "p_c8a8f1f572e389915ed32e2c",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T10:56:00+08:00",
+        "endAt": "2026-11-21T11:03:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_5fc22e0b74d7e8c22133c501",
+      "code": "NM-C组-18",
+      "group": "new_men",
+      "groupId": "new_men_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 17,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_066a1b305cd1e20b47fbe032"
+        },
+        {
+          "type": "player",
+          "playerId": "p_42942efb6349ec7477bd76ea"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_066a1b305cd1e20b47fbe032",
+      "loserId": "p_42942efb6349ec7477bd76ea",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T11:13:00+08:00",
+        "endAt": "2026-11-21T11:20:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_da8cda2f9d759a8074720c2f",
+      "code": "NM-C组-19",
+      "group": "new_men",
+      "groupId": "new_men_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 18,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_066a1b305cd1e20b47fbe032"
+        },
+        {
+          "type": "player",
+          "playerId": "p_9be87223e97f8d16b1199bff"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_066a1b305cd1e20b47fbe032",
+      "loserId": "p_9be87223e97f8d16b1199bff",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T11:30:00+08:00",
+        "endAt": "2026-11-21T11:37:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_171c4721359cfc50d1fe22fa",
+      "code": "NM-C组-20",
+      "group": "new_men",
+      "groupId": "new_men_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 19,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_c8a8f1f572e389915ed32e2c"
+        },
+        {
+          "type": "player",
+          "playerId": "p_42942efb6349ec7477bd76ea"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_c8a8f1f572e389915ed32e2c",
+      "loserId": "p_42942efb6349ec7477bd76ea",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T11:37:00+08:00",
+        "endAt": "2026-11-21T11:44:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_c0d9bba0869b7a404e1dcdeb",
+      "code": "NM-C组-21",
+      "group": "new_men",
+      "groupId": "new_men_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 20,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_c8a8f1f572e389915ed32e2c"
+        },
+        {
+          "type": "player",
+          "playerId": "p_9be87223e97f8d16b1199bff"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_c8a8f1f572e389915ed32e2c",
+      "loserId": "p_9be87223e97f8d16b1199bff",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T14:00:00+08:00",
+        "endAt": "2026-11-21T14:07:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_ab4cebaa0d972a3fc21675d5",
+      "code": "NM-C组-22",
+      "group": "new_men",
+      "groupId": "new_men_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 21,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_42942efb6349ec7477bd76ea"
+        },
+        {
+          "type": "player",
+          "playerId": "p_9be87223e97f8d16b1199bff"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_42942efb6349ec7477bd76ea",
+      "loserId": "p_9be87223e97f8d16b1199bff",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:17:00+08:00",
+        "endAt": "2026-11-21T14:24:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_30476a8fb337e017403b2f96",
+      "code": "NM-D组-23",
+      "group": "new_men",
+      "groupId": "new_men_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 22,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_fca5c44f9d4fc0bc2573bda2"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ef394d08ca0e3db42baaa47e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_fca5c44f9d4fc0bc2573bda2",
+      "loserId": "p_ef394d08ca0e3db42baaa47e",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T11:03:00+08:00",
+        "endAt": "2026-11-21T11:10:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_6397a7e837d80f5ee2813560",
+      "code": "NM-D组-24",
+      "group": "new_men",
+      "groupId": "new_men_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 23,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_fca5c44f9d4fc0bc2573bda2"
+        },
+        {
+          "type": "player",
+          "playerId": "p_7e9dfcefaa3fb7ab504aea9b"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_fca5c44f9d4fc0bc2573bda2",
+      "loserId": "p_7e9dfcefaa3fb7ab504aea9b",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T11:20:00+08:00",
+        "endAt": "2026-11-21T11:27:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_0df3cda1561582da99497fed",
+      "code": "NM-D组-25",
+      "group": "new_men",
+      "groupId": "new_men_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 24,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_fca5c44f9d4fc0bc2573bda2"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a91e9080c45f21d29eca49d4"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_fca5c44f9d4fc0bc2573bda2",
+      "loserId": "p_a91e9080c45f21d29eca49d4",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T11:37:00+08:00",
+        "endAt": "2026-11-21T11:44:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_b6d11a4e8981e6d07567822d",
+      "code": "NM-D组-26",
+      "group": "new_men",
+      "groupId": "new_men_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 25,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_ef394d08ca0e3db42baaa47e"
+        },
+        {
+          "type": "player",
+          "playerId": "p_7e9dfcefaa3fb7ab504aea9b"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_ef394d08ca0e3db42baaa47e",
+      "loserId": "p_7e9dfcefaa3fb7ab504aea9b",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T11:44:00+08:00",
+        "endAt": "2026-11-21T11:51:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_563a751b4032361f7468ecd3",
+      "code": "NM-D组-27",
+      "group": "new_men",
+      "groupId": "new_men_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 26,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_ef394d08ca0e3db42baaa47e"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a91e9080c45f21d29eca49d4"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_ef394d08ca0e3db42baaa47e",
+      "loserId": "p_a91e9080c45f21d29eca49d4",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:07:00+08:00",
+        "endAt": "2026-11-21T14:14:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_0519da33b1436c8c43d55f96",
+      "code": "NM-D组-28",
+      "group": "new_men",
+      "groupId": "new_men_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 27,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_7e9dfcefaa3fb7ab504aea9b"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a91e9080c45f21d29eca49d4"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_7e9dfcefaa3fb7ab504aea9b",
+      "loserId": "p_a91e9080c45f21d29eca49d4",
+      "completedAt": "2026-11-16T09:43:02.850Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:24:00+08:00",
+        "endAt": "2026-11-21T14:31:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_b2bfc0470ddf041d3b1c40e0",
+      "code": "NW-A组-01",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b1280e55820656e9f8a9b2be"
+        },
+        {
+          "type": "player",
+          "playerId": "p_5cbc90812d3008604c0fa350"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b1280e55820656e9f8a9b2be",
+      "loserId": "p_5cbc90812d3008604c0fa350",
+      "completedAt": "2026-11-16T09:43:02.851Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:00:00+08:00",
+        "endAt": "2026-11-21T09:07:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_3f60b10913631300a58ac13c",
+      "code": "NW-A组-02",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b1280e55820656e9f8a9b2be"
+        },
+        {
+          "type": "player",
+          "playerId": "p_e6356023f036d73ed1c5df59"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b1280e55820656e9f8a9b2be",
+      "loserId": "p_e6356023f036d73ed1c5df59",
+      "completedAt": "2026-11-16T09:43:02.851Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:17:00+08:00",
+        "endAt": "2026-11-21T09:24:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_bce94103e99f49eae4934ecc",
+      "code": "NW-A组-03",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b1280e55820656e9f8a9b2be"
+        },
+        {
+          "type": "player",
+          "playerId": "p_d5e1580b6e5d08b0f0b0f2ab"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b1280e55820656e9f8a9b2be",
+      "loserId": "p_d5e1580b6e5d08b0f0b0f2ab",
+      "completedAt": "2026-11-16T09:43:02.851Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:34:00+08:00",
+        "endAt": "2026-11-21T09:41:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_d3ab5c2f955226a0e07b7dbe",
+      "code": "NW-A组-04",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b1280e55820656e9f8a9b2be"
+        },
+        {
+          "type": "player",
+          "playerId": "p_988c8ecc9a1fafdc1fabb650"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b1280e55820656e9f8a9b2be",
+      "loserId": "p_988c8ecc9a1fafdc1fabb650",
+      "completedAt": "2026-11-16T09:43:02.851Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:51:00+08:00",
+        "endAt": "2026-11-21T09:58:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_ecae067ad0fdc8af3792eea6",
+      "code": "NW-A组-05",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 4,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5cbc90812d3008604c0fa350"
+        },
+        {
+          "type": "player",
+          "playerId": "p_e6356023f036d73ed1c5df59"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_5cbc90812d3008604c0fa350",
+      "loserId": "p_e6356023f036d73ed1c5df59",
+      "completedAt": "2026-11-16T09:43:02.851Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:41:00+08:00",
+        "endAt": "2026-11-21T09:48:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_7d3d3abf9d27d9e0d38f22ac",
+      "code": "NW-A组-06",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 5,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5cbc90812d3008604c0fa350"
+        },
+        {
+          "type": "player",
+          "playerId": "p_d5e1580b6e5d08b0f0b0f2ab"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_5cbc90812d3008604c0fa350",
+      "loserId": "p_d5e1580b6e5d08b0f0b0f2ab",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T10:08:00+08:00",
+        "endAt": "2026-11-21T10:15:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_55c32e765d56e15bf9050bcf",
+      "code": "NW-A组-07",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 6,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5cbc90812d3008604c0fa350"
+        },
+        {
+          "type": "player",
+          "playerId": "p_988c8ecc9a1fafdc1fabb650"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_5cbc90812d3008604c0fa350",
+      "loserId": "p_988c8ecc9a1fafdc1fabb650",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T10:25:00+08:00",
+        "endAt": "2026-11-21T10:32:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_ea37c5865f0d2a6fe84b87ba",
+      "code": "NW-A组-08",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 7,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_e6356023f036d73ed1c5df59"
+        },
+        {
+          "type": "player",
+          "playerId": "p_d5e1580b6e5d08b0f0b0f2ab"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_e6356023f036d73ed1c5df59",
+      "loserId": "p_d5e1580b6e5d08b0f0b0f2ab",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T10:32:00+08:00",
+        "endAt": "2026-11-21T10:39:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_2a277a76213ae73874cd0c4c",
+      "code": "NW-A组-09",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 8,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_e6356023f036d73ed1c5df59"
+        },
+        {
+          "type": "player",
+          "playerId": "p_988c8ecc9a1fafdc1fabb650"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_e6356023f036d73ed1c5df59",
+      "loserId": "p_988c8ecc9a1fafdc1fabb650",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T10:49:00+08:00",
+        "endAt": "2026-11-21T10:56:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_5d87931c591b09b652e8e2ba",
+      "code": "NW-A组-10",
+      "group": "new_women",
+      "groupId": "new_women_g1",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 9,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_d5e1580b6e5d08b0f0b0f2ab"
+        },
+        {
+          "type": "player",
+          "playerId": "p_988c8ecc9a1fafdc1fabb650"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_d5e1580b6e5d08b0f0b0f2ab",
+      "loserId": "p_988c8ecc9a1fafdc1fabb650",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T11:06:00+08:00",
+        "endAt": "2026-11-21T11:13:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9e0f5cb8c66ec5bd128b82c1",
+      "code": "NW-B组-11",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 10,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_65c2a98e008a32afffc4c27d"
+        },
+        {
+          "type": "player",
+          "playerId": "p_aeedd4303d1827c423acabbc"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_aeedd4303d1827c423acabbc",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:07:00+08:00",
+        "endAt": "2026-11-21T09:14:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e613e4c69fed33471528364e",
+      "code": "NW-B组-12",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 11,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_65c2a98e008a32afffc4c27d"
+        },
+        {
+          "type": "player",
+          "playerId": "p_e96447b5becd99afbeb071e7"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_e96447b5becd99afbeb071e7",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:24:00+08:00",
+        "endAt": "2026-11-21T09:31:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_02912af800b32dbfe4a8ebd3",
+      "code": "NW-B组-13",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 12,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_65c2a98e008a32afffc4c27d"
+        },
+        {
+          "type": "player",
+          "playerId": "p_20b816fd719079cf50e730ba"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_20b816fd719079cf50e730ba",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T10:15:00+08:00",
+        "endAt": "2026-11-21T10:22:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_fc631c7f7d857ac7b8184624",
+      "code": "NW-B组-14",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 13,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_65c2a98e008a32afffc4c27d"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a31aeb7fae54ab54fc5bfa46"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_a31aeb7fae54ab54fc5bfa46",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T10:56:00+08:00",
+        "endAt": "2026-11-21T11:03:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_ba40b579ecb3cea14d4fbe17",
+      "code": "NW-B组-15",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 14,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_aeedd4303d1827c423acabbc"
+        },
+        {
+          "type": "player",
+          "playerId": "p_e96447b5becd99afbeb071e7"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_aeedd4303d1827c423acabbc",
+      "loserId": "p_e96447b5becd99afbeb071e7",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T10:56:00+08:00",
+        "endAt": "2026-11-21T11:03:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_44368eee0c50947e8a9ac93b",
+      "code": "NW-B组-16",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 15,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_aeedd4303d1827c423acabbc"
+        },
+        {
+          "type": "player",
+          "playerId": "p_20b816fd719079cf50e730ba"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_aeedd4303d1827c423acabbc",
+      "loserId": "p_20b816fd719079cf50e730ba",
+      "completedAt": "2026-11-16T09:43:02.852Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T11:13:00+08:00",
+        "endAt": "2026-11-21T11:20:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_bcae2a6f16b10b18d2ea1f3f",
+      "code": "NW-B组-17",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 16,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_aeedd4303d1827c423acabbc"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a31aeb7fae54ab54fc5bfa46"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_aeedd4303d1827c423acabbc",
+      "loserId": "p_a31aeb7fae54ab54fc5bfa46",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T11:30:00+08:00",
+        "endAt": "2026-11-21T11:37:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_487246dbbf5827d7cb0eba1e",
+      "code": "NW-B组-18",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 17,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_e96447b5becd99afbeb071e7"
+        },
+        {
+          "type": "player",
+          "playerId": "p_20b816fd719079cf50e730ba"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_e96447b5becd99afbeb071e7",
+      "loserId": "p_20b816fd719079cf50e730ba",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T11:30:00+08:00",
+        "endAt": "2026-11-21T11:37:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9b39f1f1e0d5192a7d76639d",
+      "code": "NW-B组-19",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 18,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_e96447b5becd99afbeb071e7"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a31aeb7fae54ab54fc5bfa46"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_e96447b5becd99afbeb071e7",
+      "loserId": "p_a31aeb7fae54ab54fc5bfa46",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T11:47:00+08:00",
+        "endAt": "2026-11-21T11:54:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_7296dafba4f9e03155d387e7",
+      "code": "NW-B组-20",
+      "group": "new_women",
+      "groupId": "new_women_g2",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 19,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_20b816fd719079cf50e730ba"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a31aeb7fae54ab54fc5bfa46"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_20b816fd719079cf50e730ba",
+      "loserId": "p_a31aeb7fae54ab54fc5bfa46",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:00:00+08:00",
+        "endAt": "2026-11-21T14:07:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_2a1b6fc64ff2122d4ce785ea",
+      "code": "NW-C组-21",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 20,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_7cb8c4db16b28a4668a1c53f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_5da16f2779890cdbbc829cf1"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_7cb8c4db16b28a4668a1c53f",
+      "loserId": "p_5da16f2779890cdbbc829cf1",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T11:03:00+08:00",
+        "endAt": "2026-11-21T11:10:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_17a56724b20e0ce92c29b809",
+      "code": "NW-C组-22",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 21,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_7cb8c4db16b28a4668a1c53f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_14ee21a1ae244b7aa2883dd3"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_7cb8c4db16b28a4668a1c53f",
+      "loserId": "p_14ee21a1ae244b7aa2883dd3",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T11:20:00+08:00",
+        "endAt": "2026-11-21T11:27:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9b15985b47ed3c6071f16493",
+      "code": "NW-C组-23",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 22,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_7cb8c4db16b28a4668a1c53f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ab662c9545cb7749605f85d6"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_7cb8c4db16b28a4668a1c53f",
+      "loserId": "p_ab662c9545cb7749605f85d6",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T11:37:00+08:00",
+        "endAt": "2026-11-21T11:44:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_11110f7b5bc3d2c7018451ee",
+      "code": "NW-C组-24",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 23,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_7cb8c4db16b28a4668a1c53f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_56d35fd38bba999b7995a15e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_7cb8c4db16b28a4668a1c53f",
+      "loserId": "p_56d35fd38bba999b7995a15e",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T14:00:00+08:00",
+        "endAt": "2026-11-21T14:07:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_685738617fadc2731ce35c60",
+      "code": "NW-C组-25",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 24,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5da16f2779890cdbbc829cf1"
+        },
+        {
+          "type": "player",
+          "playerId": "p_14ee21a1ae244b7aa2883dd3"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_5da16f2779890cdbbc829cf1",
+      "loserId": "p_14ee21a1ae244b7aa2883dd3",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T11:37:00+08:00",
+        "endAt": "2026-11-21T11:44:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_22c73e114f3b390e4c5f4738",
+      "code": "NW-C组-26",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 25,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5da16f2779890cdbbc829cf1"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ab662c9545cb7749605f85d6"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_5da16f2779890cdbbc829cf1",
+      "loserId": "p_ab662c9545cb7749605f85d6",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T14:00:00+08:00",
+        "endAt": "2026-11-21T14:07:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_74a48b687dbcd389ffbfe866",
+      "code": "NW-C组-27",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 26,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5da16f2779890cdbbc829cf1"
+        },
+        {
+          "type": "player",
+          "playerId": "p_56d35fd38bba999b7995a15e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_5da16f2779890cdbbc829cf1",
+      "loserId": "p_56d35fd38bba999b7995a15e",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T14:17:00+08:00",
+        "endAt": "2026-11-21T14:24:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_cb61e731c3d942957b5bd30b",
+      "code": "NW-C组-28",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 27,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_14ee21a1ae244b7aa2883dd3"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ab662c9545cb7749605f85d6"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_14ee21a1ae244b7aa2883dd3",
+      "loserId": "p_ab662c9545cb7749605f85d6",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T14:17:00+08:00",
+        "endAt": "2026-11-21T14:24:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_25d65f61eb655a410e8b0dd5",
+      "code": "NW-C组-29",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 28,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_14ee21a1ae244b7aa2883dd3"
+        },
+        {
+          "type": "player",
+          "playerId": "p_56d35fd38bba999b7995a15e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_14ee21a1ae244b7aa2883dd3",
+      "loserId": "p_56d35fd38bba999b7995a15e",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:34:00+08:00",
+        "endAt": "2026-11-21T14:41:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_1c9ed4c4ed878b0cf843babd",
+      "code": "NW-C组-30",
+      "group": "new_women",
+      "groupId": "new_women_g3",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 29,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_ab662c9545cb7749605f85d6"
+        },
+        {
+          "type": "player",
+          "playerId": "p_56d35fd38bba999b7995a15e"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_ab662c9545cb7749605f85d6",
+      "loserId": "p_56d35fd38bba999b7995a15e",
+      "completedAt": "2026-11-16T09:43:02.853Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:51:00+08:00",
+        "endAt": "2026-11-21T14:58:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_587c2f32852d8fc5c341d625",
+      "code": "NW-D组-31",
+      "group": "new_women",
+      "groupId": "new_women_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 30,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_12c60d66a7c7a649294e70a0"
+        },
+        {
+          "type": "player",
+          "playerId": "p_812563e769711f84516b4f37"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_12c60d66a7c7a649294e70a0",
+      "loserId": "p_812563e769711f84516b4f37",
+      "completedAt": "2026-11-16T09:43:02.854Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T11:10:00+08:00",
+        "endAt": "2026-11-21T11:17:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_3e17ca4e137db5e8a55a105c",
+      "code": "NW-D组-32",
+      "group": "new_women",
+      "groupId": "new_women_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 31,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_12c60d66a7c7a649294e70a0"
+        },
+        {
+          "type": "player",
+          "playerId": "p_0eb19705091316353afd0e21"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_12c60d66a7c7a649294e70a0",
+      "loserId": "p_0eb19705091316353afd0e21",
+      "completedAt": "2026-11-16T09:43:02.854Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T11:44:00+08:00",
+        "endAt": "2026-11-21T11:51:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_44c59905207117d124e02e84",
+      "code": "NW-D组-33",
+      "group": "new_women",
+      "groupId": "new_women_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 32,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_12c60d66a7c7a649294e70a0"
+        },
+        {
+          "type": "player",
+          "playerId": "p_af45971ef8a135c62f945419"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_12c60d66a7c7a649294e70a0",
+      "loserId": "p_af45971ef8a135c62f945419",
+      "completedAt": "2026-11-16T09:43:02.854Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T14:07:00+08:00",
+        "endAt": "2026-11-21T14:14:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_df6c70a2fcf7e896a01f8f5f",
+      "code": "NW-D组-34",
+      "group": "new_women",
+      "groupId": "new_women_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 33,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_812563e769711f84516b4f37"
+        },
+        {
+          "type": "player",
+          "playerId": "p_0eb19705091316353afd0e21"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_812563e769711f84516b4f37",
+      "loserId": "p_0eb19705091316353afd0e21",
+      "completedAt": "2026-11-16T09:43:02.854Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T14:07:00+08:00",
+        "endAt": "2026-11-21T14:14:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_c6e5d24d14c1883898827495",
+      "code": "NW-D组-35",
+      "group": "new_women",
+      "groupId": "new_women_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 34,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_812563e769711f84516b4f37"
+        },
+        {
+          "type": "player",
+          "playerId": "p_af45971ef8a135c62f945419"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_812563e769711f84516b4f37",
+      "loserId": "p_af45971ef8a135c62f945419",
+      "completedAt": "2026-11-16T09:43:02.854Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T14:24:00+08:00",
+        "endAt": "2026-11-21T14:31:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_da1e5689ef27833c86c1a56e",
+      "code": "NW-D组-36",
+      "group": "new_women",
+      "groupId": "new_women_g4",
+      "phase": "group",
+      "phaseLabel": "小组赛",
+      "roundIndex": 0,
+      "order": 35,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_0eb19705091316353afd0e21"
+        },
+        {
+          "type": "player",
+          "playerId": "p_af45971ef8a135c62f945419"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_0eb19705091316353afd0e21",
+      "loserId": "p_af45971ef8a135c62f945419",
+      "completedAt": "2026-11-16T09:43:02.854Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:41:00+08:00",
+        "endAt": "2026-11-21T14:48:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": null
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_28deea40aa69f52b9877c72b",
+      "code": "AM-Q1",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b0a8a86e48b1a30786986404"
+        },
+        {
+          "type": "player",
+          "playerId": "p_7d011f4ae0d2b33f78195ea1"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b0a8a86e48b1a30786986404",
+      "loserId": "p_7d011f4ae0d2b33f78195ea1",
+      "completedAt": "2026-11-16T09:43:02.959Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T09:00:00+08:00",
+        "endAt": "2026-11-21T09:17:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.959Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9d7da2143c87bb900eb36a45",
+      "code": "AM-Q2",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b9f3a7495670e58afaaa75f2"
+        },
+        {
+          "type": "player",
+          "playerId": "p_9cf37943fd1f87ef4868adac"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b9f3a7495670e58afaaa75f2",
+      "loserId": "p_9cf37943fd1f87ef4868adac",
+      "completedAt": "2026-11-16T09:43:02.960Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T09:17:00+08:00",
+        "endAt": "2026-11-21T09:34:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.960Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_23e6ab75f683365053f0dacd",
+      "code": "AM-Q3",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_72fa858f334aabb021845081"
+        },
+        {
+          "type": "player",
+          "playerId": "p_90941e1ed51ff277403f331f"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_72fa858f334aabb021845081",
+      "loserId": "p_90941e1ed51ff277403f331f",
+      "completedAt": "2026-11-16T09:43:02.961Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T09:34:00+08:00",
+        "endAt": "2026-11-21T09:51:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.961Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_7a0bef3f1253472c24577aab",
+      "code": "AM-Q4",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_00d85007aeb98d59ae609471"
+        },
+        {
+          "type": "player",
+          "playerId": "p_d8cfce1e713f499f7951f88a"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_00d85007aeb98d59ae609471",
+      "loserId": "p_d8cfce1e713f499f7951f88a",
+      "completedAt": "2026-11-16T09:43:02.962Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T09:51:00+08:00",
+        "endAt": "2026-11-21T10:08:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.962Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_a265e872e2effd69033a74ec",
+      "code": "AM-Q5",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 4,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_c6f01ca216bce64ddf14b877"
+        },
+        {
+          "type": "player",
+          "playerId": "p_62a4ac11d358592dadde3089"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_c6f01ca216bce64ddf14b877",
+      "loserId": "p_62a4ac11d358592dadde3089",
+      "completedAt": "2026-11-16T09:43:02.963Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T09:58:00+08:00",
+        "endAt": "2026-11-21T10:15:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.963Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_74426f82a1cdbeb6b928979b",
+      "code": "AM-Q6",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 5,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_d3b85c982edde0b0b1d83683"
+        },
+        {
+          "type": "player",
+          "playerId": "p_a1f4f363349306b6f847686a"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_d3b85c982edde0b0b1d83683",
+      "loserId": "p_a1f4f363349306b6f847686a",
+      "completedAt": "2026-11-16T09:43:02.964Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T10:15:00+08:00",
+        "endAt": "2026-11-21T10:32:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.964Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e161806772f3f25d81dd26d3",
+      "code": "AM-Q7",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 6,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_d8160b22a7eb68670972303d"
+        },
+        {
+          "type": "player",
+          "playerId": "p_3bbff6257ad8a922a3af2742"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_d8160b22a7eb68670972303d",
+      "loserId": "p_3bbff6257ad8a922a3af2742",
+      "completedAt": "2026-11-16T09:43:02.964Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T10:32:00+08:00",
+        "endAt": "2026-11-21T10:49:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.964Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_894ef9fa627572cd10f476f0",
+      "code": "AM-Q8",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 7,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_83076c66f9cf35ef6dfbff1a"
+        },
+        {
+          "type": "player",
+          "playerId": "p_baf6f3d5cd0b93c674f3dfcf"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_83076c66f9cf35ef6dfbff1a",
+      "loserId": "p_baf6f3d5cd0b93c674f3dfcf",
+      "completedAt": "2026-11-16T09:43:02.965Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T10:39:00+08:00",
+        "endAt": "2026-11-21T10:56:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.965Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_25f35efabb27044673a6b059",
+      "code": "AM-R16-1",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_91f5a72c5787dfdbeebed51b"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_28deea40aa69f52b9877c72b"
+        }
+      ],
+      "dependencies": [
+        "m_28deea40aa69f52b9877c72b"
+      ],
+      "winnerId": "p_91f5a72c5787dfdbeebed51b",
+      "loserId": "p_b0a8a86e48b1a30786986404",
+      "completedAt": "2026-11-16T09:43:02.965Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T14:07:00+08:00",
+        "endAt": "2026-11-21T14:24:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.965Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_1c39fc34c6c9a2b951135726",
+      "code": "AM-R16-2",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_70a803e518a820179aed1411"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_9d7da2143c87bb900eb36a45"
+        }
+      ],
+      "dependencies": [
+        "m_9d7da2143c87bb900eb36a45"
+      ],
+      "winnerId": "p_70a803e518a820179aed1411",
+      "loserId": "p_b9f3a7495670e58afaaa75f2",
+      "completedAt": "2026-11-16T09:43:02.965Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T14:24:00+08:00",
+        "endAt": "2026-11-21T14:41:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.965Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_2beac267e10f6b7c3dc7da11",
+      "code": "AM-R16-3",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_51e6e5f3cf364eafff8eea6a"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_23e6ab75f683365053f0dacd"
+        }
+      ],
+      "dependencies": [
+        "m_23e6ab75f683365053f0dacd"
+      ],
+      "winnerId": "p_51e6e5f3cf364eafff8eea6a",
+      "loserId": "p_72fa858f334aabb021845081",
+      "completedAt": "2026-11-16T09:43:02.966Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T14:48:00+08:00",
+        "endAt": "2026-11-21T15:05:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.966Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_48e31c4102f0ecd514d8abfa",
+      "code": "AM-R16-4",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_e9191d47ac86009256aba426"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_7a0bef3f1253472c24577aab"
+        }
+      ],
+      "dependencies": [
+        "m_7a0bef3f1253472c24577aab"
+      ],
+      "winnerId": "p_e9191d47ac86009256aba426",
+      "loserId": "p_00d85007aeb98d59ae609471",
+      "completedAt": "2026-11-16T09:43:02.966Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T15:15:00+08:00",
+        "endAt": "2026-11-21T15:32:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.966Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_b71856e017224b8346a0dcce",
+      "code": "AM-R16-5",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 4,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_bf5d943e67f9945b42fd28e6"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_a265e872e2effd69033a74ec"
+        }
+      ],
+      "dependencies": [
+        "m_a265e872e2effd69033a74ec"
+      ],
+      "winnerId": "p_bf5d943e67f9945b42fd28e6",
+      "loserId": "p_c6f01ca216bce64ddf14b877",
+      "completedAt": "2026-11-16T09:43:02.966Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T15:15:00+08:00",
+        "endAt": "2026-11-21T15:32:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.966Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_148c3483063ad490134a733b",
+      "code": "AM-R16-6",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 5,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_af74c4d7e507f8b6b21b92b4"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_74426f82a1cdbeb6b928979b"
+        }
+      ],
+      "dependencies": [
+        "m_74426f82a1cdbeb6b928979b"
+      ],
+      "winnerId": "p_af74c4d7e507f8b6b21b92b4",
+      "loserId": "p_d3b85c982edde0b0b1d83683",
+      "completedAt": "2026-11-16T09:43:02.967Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T15:32:00+08:00",
+        "endAt": "2026-11-21T15:49:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.967Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e421d1e6ba73d409498f9470",
+      "code": "AM-R16-7",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 6,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_feaad7c295ff055809ecd878"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_e161806772f3f25d81dd26d3"
+        }
+      ],
+      "dependencies": [
+        "m_e161806772f3f25d81dd26d3"
+      ],
+      "winnerId": "p_feaad7c295ff055809ecd878",
+      "loserId": "p_d8160b22a7eb68670972303d",
+      "completedAt": "2026-11-16T09:43:02.967Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T15:32:00+08:00",
+        "endAt": "2026-11-21T15:49:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.967Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_d9efa6c0c892de90f1fdca25",
+      "code": "AM-R16-8",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 7,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_8af7186eabd9d555aa44d917"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_894ef9fa627572cd10f476f0"
+        }
+      ],
+      "dependencies": [
+        "m_894ef9fa627572cd10f476f0"
+      ],
+      "winnerId": "p_8af7186eabd9d555aa44d917",
+      "loserId": "p_83076c66f9cf35ef6dfbff1a",
+      "completedAt": "2026-11-16T09:43:02.967Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T15:49:00+08:00",
+        "endAt": "2026-11-21T16:06:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.967Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_be4429f7018cfebb61642888",
+      "code": "AM-QF1",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_25f35efabb27044673a6b059"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_1c39fc34c6c9a2b951135726"
+        }
+      ],
+      "dependencies": [
+        "m_25f35efabb27044673a6b059",
+        "m_1c39fc34c6c9a2b951135726"
+      ],
+      "winnerId": "p_91f5a72c5787dfdbeebed51b",
+      "loserId": "p_70a803e518a820179aed1411",
+      "completedAt": "2026-11-16T09:43:02.967Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T16:06:00+08:00",
+        "endAt": "2026-11-21T16:23:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.967Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_a1ca745fd189c8c60f56932e",
+      "code": "AM-QF2",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 1,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_2beac267e10f6b7c3dc7da11"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_48e31c4102f0ecd514d8abfa"
+        }
+      ],
+      "dependencies": [
+        "m_2beac267e10f6b7c3dc7da11",
+        "m_48e31c4102f0ecd514d8abfa"
+      ],
+      "winnerId": "p_51e6e5f3cf364eafff8eea6a",
+      "loserId": "p_e9191d47ac86009256aba426",
+      "completedAt": "2026-11-16T09:43:02.967Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T16:06:00+08:00",
+        "endAt": "2026-11-21T16:23:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.967Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_c039d4731af9980e850eaf5e",
+      "code": "AM-QF3",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 2,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_b71856e017224b8346a0dcce"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_148c3483063ad490134a733b"
+        }
+      ],
+      "dependencies": [
+        "m_b71856e017224b8346a0dcce",
+        "m_148c3483063ad490134a733b"
+      ],
+      "winnerId": "p_bf5d943e67f9945b42fd28e6",
+      "loserId": "p_af74c4d7e507f8b6b21b92b4",
+      "completedAt": "2026-11-16T09:43:02.968Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T16:23:00+08:00",
+        "endAt": "2026-11-21T16:40:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.968Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_aac380c494c50d56c93ed991",
+      "code": "AM-QF4",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 3,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_e421d1e6ba73d409498f9470"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_d9efa6c0c892de90f1fdca25"
+        }
+      ],
+      "dependencies": [
+        "m_e421d1e6ba73d409498f9470",
+        "m_d9efa6c0c892de90f1fdca25"
+      ],
+      "winnerId": "p_feaad7c295ff055809ecd878",
+      "loserId": "p_8af7186eabd9d555aa44d917",
+      "completedAt": "2026-11-16T09:43:02.968Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T16:23:00+08:00",
+        "endAt": "2026-11-21T16:40:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.968Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_95bf2a5cba228dd383297c6b",
+      "code": "AM-SF1",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 3,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_be4429f7018cfebb61642888"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_a1ca745fd189c8c60f56932e"
+        }
+      ],
+      "dependencies": [
+        "m_be4429f7018cfebb61642888",
+        "m_a1ca745fd189c8c60f56932e"
+      ],
+      "winnerId": "p_91f5a72c5787dfdbeebed51b",
+      "loserId": "p_51e6e5f3cf364eafff8eea6a",
+      "completedAt": "2026-11-16T09:43:02.968Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T16:47:00+08:00",
+        "endAt": "2026-11-21T17:04:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.968Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_33cdd5b1e364da62a5ce6475",
+      "code": "AM-SF2",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 3,
+      "order": 1,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_c039d4731af9980e850eaf5e"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_aac380c494c50d56c93ed991"
+        }
+      ],
+      "dependencies": [
+        "m_c039d4731af9980e850eaf5e",
+        "m_aac380c494c50d56c93ed991"
+      ],
+      "winnerId": "p_bf5d943e67f9945b42fd28e6",
+      "loserId": "p_feaad7c295ff055809ecd878",
+      "completedAt": "2026-11-16T09:43:02.968Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T16:50:00+08:00",
+        "endAt": "2026-11-21T17:07:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.968Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_af0a8d02494d166c13e9705b",
+      "code": "AM-F",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "final",
+      "phaseLabel": "决赛",
+      "roundIndex": 4,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_95bf2a5cba228dd383297c6b"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_33cdd5b1e364da62a5ce6475"
+        }
+      ],
+      "dependencies": [
+        "m_95bf2a5cba228dd383297c6b",
+        "m_33cdd5b1e364da62a5ce6475"
+      ],
+      "winnerId": "p_bf5d943e67f9945b42fd28e6",
+      "loserId": "p_91f5a72c5787dfdbeebed51b",
+      "completedAt": "2026-11-16T09:43:02.969Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T17:17:00+08:00",
+        "endAt": "2026-11-21T17:34:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.969Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_06b5a262d4e33ae7b9850ad1",
+      "code": "AM-3RD",
+      "group": "advanced_men",
+      "groupId": null,
+      "phase": "third",
+      "phaseLabel": "季军赛",
+      "roundIndex": 4,
+      "order": 1,
+      "slots": [
+        {
+          "type": "loser",
+          "matchId": "m_95bf2a5cba228dd383297c6b"
+        },
+        {
+          "type": "loser",
+          "matchId": "m_33cdd5b1e364da62a5ce6475"
+        }
+      ],
+      "dependencies": [
+        "m_95bf2a5cba228dd383297c6b",
+        "m_33cdd5b1e364da62a5ce6475"
+      ],
+      "winnerId": "p_51e6e5f3cf364eafff8eea6a",
+      "loserId": "p_feaad7c295ff055809ecd878",
+      "completedAt": "2026-11-16T09:43:02.969Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T17:17:00+08:00",
+        "endAt": "2026-11-21T17:34:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.969Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_ea9f10a27559960e7a9037a2",
+      "code": "AW-Q1",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_30438df0db7230db3cad4bf1"
+        },
+        {
+          "type": "player",
+          "playerId": "p_bb385b83861d8ff6de37a8b3"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_30438df0db7230db3cad4bf1",
+      "loserId": "p_bb385b83861d8ff6de37a8b3",
+      "completedAt": "2026-11-16T09:43:02.969Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T09:00:00+08:00",
+        "endAt": "2026-11-21T09:17:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.969Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_a17b7128f0609db90b8d2a0e",
+      "code": "AW-Q2",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_199e7d00feb5a4a7e76da909"
+        },
+        {
+          "type": "player",
+          "playerId": "p_4c9853fa80320549f3b90700"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_199e7d00feb5a4a7e76da909",
+      "loserId": "p_4c9853fa80320549f3b90700",
+      "completedAt": "2026-11-16T09:43:02.970Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T09:17:00+08:00",
+        "endAt": "2026-11-21T09:34:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.970Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_889cb6601d3211ede040839d",
+      "code": "AW-Q3",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b2d6fec9c802ad2f26701416"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ab92fefef5707ef13dd1fe5c"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_b2d6fec9c802ad2f26701416",
+      "loserId": "p_ab92fefef5707ef13dd1fe5c",
+      "completedAt": "2026-11-16T09:43:02.971Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T09:34:00+08:00",
+        "endAt": "2026-11-21T09:51:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.971Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_026d048b7ac77fb13094c2a2",
+      "code": "AW-Q4",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_1aebe27735a1c68d3ffd35c6"
+        },
+        {
+          "type": "player",
+          "playerId": "p_c7799f3fc7b86a1616756146"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_1aebe27735a1c68d3ffd35c6",
+      "loserId": "p_c7799f3fc7b86a1616756146",
+      "completedAt": "2026-11-16T09:43:02.971Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T09:51:00+08:00",
+        "endAt": "2026-11-21T10:08:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.971Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_325dd4144165ebd96340b575",
+      "code": "AW-Q5",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 4,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_0ceea808962e163b4d1ca242"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ba3f5d527288adb12ad3eede"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_0ceea808962e163b4d1ca242",
+      "loserId": "p_ba3f5d527288adb12ad3eede",
+      "completedAt": "2026-11-16T09:43:02.972Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T09:58:00+08:00",
+        "endAt": "2026-11-21T10:15:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.972Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_906f3742e697db0e9d22bfbb",
+      "code": "AW-Q6",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 5,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_2a2e9964b21959cdf635bdeb"
+        },
+        {
+          "type": "player",
+          "playerId": "p_323bb6e0e5da2dd3f17f34b3"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_2a2e9964b21959cdf635bdeb",
+      "loserId": "p_323bb6e0e5da2dd3f17f34b3",
+      "completedAt": "2026-11-16T09:43:02.972Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T10:15:00+08:00",
+        "endAt": "2026-11-21T10:32:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.972Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_4801bd498f7d882220f98d45",
+      "code": "AW-Q7",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 6,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_4710ac1c75d142a50ec82d2c"
+        },
+        {
+          "type": "player",
+          "playerId": "p_57417a5b565fb725b4de7f15"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_4710ac1c75d142a50ec82d2c",
+      "loserId": "p_57417a5b565fb725b4de7f15",
+      "completedAt": "2026-11-16T09:43:02.973Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T10:32:00+08:00",
+        "endAt": "2026-11-21T10:49:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.973Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_14a6049448df6dc463a4a422",
+      "code": "AW-Q8",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qualifier",
+      "phaseLabel": "资格赛",
+      "roundIndex": 0,
+      "order": 7,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_97a2fe094e2f2f66036f8fba"
+        },
+        {
+          "type": "player",
+          "playerId": "p_333ef264bc28dfc7b7fe238a"
+        }
+      ],
+      "dependencies": [],
+      "winnerId": "p_97a2fe094e2f2f66036f8fba",
+      "loserId": "p_333ef264bc28dfc7b7fe238a",
+      "completedAt": "2026-11-16T09:43:02.974Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T10:39:00+08:00",
+        "endAt": "2026-11-21T10:56:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.974Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9c211226840f69f120dc9b68",
+      "code": "AW-R16-1",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_dc99be274b39fff3a56d7dc2"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_ea9f10a27559960e7a9037a2"
+        }
+      ],
+      "dependencies": [
+        "m_ea9f10a27559960e7a9037a2"
+      ],
+      "winnerId": "p_dc99be274b39fff3a56d7dc2",
+      "loserId": "p_30438df0db7230db3cad4bf1",
+      "completedAt": "2026-11-16T09:43:02.974Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T14:24:00+08:00",
+        "endAt": "2026-11-21T14:41:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.974Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_84eb832d8d6fb4b09d800e50",
+      "code": "AW-R16-2",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_2cf55907e321c2e0ea9f451e"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_a17b7128f0609db90b8d2a0e"
+        }
+      ],
+      "dependencies": [
+        "m_a17b7128f0609db90b8d2a0e"
+      ],
+      "winnerId": "p_2cf55907e321c2e0ea9f451e",
+      "loserId": "p_199e7d00feb5a4a7e76da909",
+      "completedAt": "2026-11-16T09:43:02.975Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T14:48:00+08:00",
+        "endAt": "2026-11-21T15:05:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.975Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9aa1c54c7824e1fff2a6e6bb",
+      "code": "AW-R16-3",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_8a832465c86c3eb0fd2bd98d"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_889cb6601d3211ede040839d"
+        }
+      ],
+      "dependencies": [
+        "m_889cb6601d3211ede040839d"
+      ],
+      "winnerId": "p_8a832465c86c3eb0fd2bd98d",
+      "loserId": "p_b2d6fec9c802ad2f26701416",
+      "completedAt": "2026-11-16T09:43:02.975Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T15:15:00+08:00",
+        "endAt": "2026-11-21T15:32:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.975Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_1f8edb1657d07987ab742e71",
+      "code": "AW-R16-4",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_dcd31bcbac08f6cdd79302eb"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_026d048b7ac77fb13094c2a2"
+        }
+      ],
+      "dependencies": [
+        "m_026d048b7ac77fb13094c2a2"
+      ],
+      "winnerId": "p_dcd31bcbac08f6cdd79302eb",
+      "loserId": "p_1aebe27735a1c68d3ffd35c6",
+      "completedAt": "2026-11-16T09:43:02.975Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T15:15:00+08:00",
+        "endAt": "2026-11-21T15:32:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.975Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_07225234bd4173817ebc26fa",
+      "code": "AW-R16-5",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 4,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_1ff1c3026575a9d678ed9add"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_325dd4144165ebd96340b575"
+        }
+      ],
+      "dependencies": [
+        "m_325dd4144165ebd96340b575"
+      ],
+      "winnerId": "p_1ff1c3026575a9d678ed9add",
+      "loserId": "p_0ceea808962e163b4d1ca242",
+      "completedAt": "2026-11-16T09:43:02.976Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T15:32:00+08:00",
+        "endAt": "2026-11-21T15:49:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.976Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_9499211acb8ef24ee5937cc1",
+      "code": "AW-R16-6",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 5,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b9064b1ed5ff0508c71e2459"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_906f3742e697db0e9d22bfbb"
+        }
+      ],
+      "dependencies": [
+        "m_906f3742e697db0e9d22bfbb"
+      ],
+      "winnerId": "p_b9064b1ed5ff0508c71e2459",
+      "loserId": "p_2a2e9964b21959cdf635bdeb",
+      "completedAt": "2026-11-16T09:43:02.976Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T15:32:00+08:00",
+        "endAt": "2026-11-21T15:49:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.976Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_c4e25dec85f14aecf8bf1d70",
+      "code": "AW-R16-7",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 6,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_5872a9e2e600fd8b0d88c169"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_4801bd498f7d882220f98d45"
+        }
+      ],
+      "dependencies": [
+        "m_4801bd498f7d882220f98d45"
+      ],
+      "winnerId": "p_5872a9e2e600fd8b0d88c169",
+      "loserId": "p_4710ac1c75d142a50ec82d2c",
+      "completedAt": "2026-11-16T09:43:02.977Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T15:49:00+08:00",
+        "endAt": "2026-11-21T16:06:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.977Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_0011197342aa133cbbfd41c4",
+      "code": "AW-R16-8",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "r16",
+      "phaseLabel": "16强",
+      "roundIndex": 1,
+      "order": 7,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_020071e858d878d0d271b68a"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_14a6049448df6dc463a4a422"
+        }
+      ],
+      "dependencies": [
+        "m_14a6049448df6dc463a4a422"
+      ],
+      "winnerId": "p_020071e858d878d0d271b68a",
+      "loserId": "p_97a2fe094e2f2f66036f8fba",
+      "completedAt": "2026-11-16T09:43:02.977Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T15:49:00+08:00",
+        "endAt": "2026-11-21T16:06:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.977Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_cebb15928b78ae35749b4f81",
+      "code": "AW-QF1",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_9c211226840f69f120dc9b68"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_84eb832d8d6fb4b09d800e50"
+        }
+      ],
+      "dependencies": [
+        "m_9c211226840f69f120dc9b68",
+        "m_84eb832d8d6fb4b09d800e50"
+      ],
+      "winnerId": "p_dc99be274b39fff3a56d7dc2",
+      "loserId": "p_2cf55907e321c2e0ea9f451e",
+      "completedAt": "2026-11-16T09:43:02.978Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T16:06:00+08:00",
+        "endAt": "2026-11-21T16:23:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.978Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_3fabfe4734fae0ce382de457",
+      "code": "AW-QF2",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 1,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_9aa1c54c7824e1fff2a6e6bb"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_1f8edb1657d07987ab742e71"
+        }
+      ],
+      "dependencies": [
+        "m_9aa1c54c7824e1fff2a6e6bb",
+        "m_1f8edb1657d07987ab742e71"
+      ],
+      "winnerId": "p_8a832465c86c3eb0fd2bd98d",
+      "loserId": "p_dcd31bcbac08f6cdd79302eb",
+      "completedAt": "2026-11-16T09:43:02.978Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T16:10:00+08:00",
+        "endAt": "2026-11-21T16:27:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.978Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e701d0021b7e5fee2f5495d4",
+      "code": "AW-QF3",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 2,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_07225234bd4173817ebc26fa"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_9499211acb8ef24ee5937cc1"
+        }
+      ],
+      "dependencies": [
+        "m_07225234bd4173817ebc26fa",
+        "m_9499211acb8ef24ee5937cc1"
+      ],
+      "winnerId": "p_1ff1c3026575a9d678ed9add",
+      "loserId": "p_b9064b1ed5ff0508c71e2459",
+      "completedAt": "2026-11-16T09:43:02.978Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T16:23:00+08:00",
+        "endAt": "2026-11-21T16:40:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.978Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_77097620fe60c80314660238",
+      "code": "AW-QF4",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 2,
+      "order": 3,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_c4e25dec85f14aecf8bf1d70"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_0011197342aa133cbbfd41c4"
+        }
+      ],
+      "dependencies": [
+        "m_c4e25dec85f14aecf8bf1d70",
+        "m_0011197342aa133cbbfd41c4"
+      ],
+      "winnerId": "p_5872a9e2e600fd8b0d88c169",
+      "loserId": "p_020071e858d878d0d271b68a",
+      "completedAt": "2026-11-16T09:43:02.978Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T16:27:00+08:00",
+        "endAt": "2026-11-21T16:44:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.978Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_433c7472814d82b78f09e586",
+      "code": "AW-SF1",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 3,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_cebb15928b78ae35749b4f81"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_3fabfe4734fae0ce382de457"
+        }
+      ],
+      "dependencies": [
+        "m_cebb15928b78ae35749b4f81",
+        "m_3fabfe4734fae0ce382de457"
+      ],
+      "winnerId": "p_dc99be274b39fff3a56d7dc2",
+      "loserId": "p_8a832465c86c3eb0fd2bd98d",
+      "completedAt": "2026-11-16T09:43:02.979Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T16:47:00+08:00",
+        "endAt": "2026-11-21T17:04:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.979Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_4e71cc77709e4f04f2d12d9f",
+      "code": "AW-SF2",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 3,
+      "order": 1,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_e701d0021b7e5fee2f5495d4"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_77097620fe60c80314660238"
+        }
+      ],
+      "dependencies": [
+        "m_e701d0021b7e5fee2f5495d4",
+        "m_77097620fe60c80314660238"
+      ],
+      "winnerId": "p_1ff1c3026575a9d678ed9add",
+      "loserId": "p_5872a9e2e600fd8b0d88c169",
+      "completedAt": "2026-11-16T09:43:02.979Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T16:54:00+08:00",
+        "endAt": "2026-11-21T17:11:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.979Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_738e6c43846fc8c74a5d8bf4",
+      "code": "AW-F",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "final",
+      "phaseLabel": "决赛",
+      "roundIndex": 4,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_433c7472814d82b78f09e586"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_4e71cc77709e4f04f2d12d9f"
+        }
+      ],
+      "dependencies": [
+        "m_433c7472814d82b78f09e586",
+        "m_4e71cc77709e4f04f2d12d9f"
+      ],
+      "winnerId": "p_1ff1c3026575a9d678ed9add",
+      "loserId": "p_dc99be274b39fff3a56d7dc2",
+      "completedAt": "2026-11-16T09:43:02.979Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T17:21:00+08:00",
+        "endAt": "2026-11-21T17:38:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.979Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_81dce61d36a73d861a639ed8",
+      "code": "AW-3RD",
+      "group": "advanced_women",
+      "groupId": null,
+      "phase": "third",
+      "phaseLabel": "季军赛",
+      "roundIndex": 4,
+      "order": 1,
+      "slots": [
+        {
+          "type": "loser",
+          "matchId": "m_433c7472814d82b78f09e586"
+        },
+        {
+          "type": "loser",
+          "matchId": "m_4e71cc77709e4f04f2d12d9f"
+        }
+      ],
+      "dependencies": [
+        "m_433c7472814d82b78f09e586",
+        "m_4e71cc77709e4f04f2d12d9f"
+      ],
+      "winnerId": "p_8a832465c86c3eb0fd2bd98d",
+      "loserId": "p_5872a9e2e600fd8b0d88c169",
+      "completedAt": "2026-11-16T09:43:02.979Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T17:21:00+08:00",
+        "endAt": "2026-11-21T17:38:00+08:00",
+        "estimatedMinutes": 17,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.979Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_91721ebe0fe98519be9b1320",
+      "code": "NM-QF1",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_f5a9fefea65b1bc0b650246a"
+        },
+        {
+          "type": "player",
+          "playerId": "p_c8a8f1f572e389915ed32e2c"
+        }
+      ],
+      "dependencies": [
+        "m_b0d99eba783d9f3704db887c",
+        "m_28390271450cee15b465fdcc",
+        "m_9d79b27eb60562bea839181b",
+        "m_e3d23f75ab818d3ed3e0a6bd",
+        "m_34d6adb7fc50b2cbe2a9339b",
+        "m_95b563f9b52c2a1bbffd4671",
+        "m_6314307c223a7a4a451ca06d",
+        "m_25774253acc9ff73610947e2",
+        "m_4bfa15ea721e2f46b10e24f5",
+        "m_b84ea48c1bc5dd28a21e075d",
+        "m_c484fcd151a40ab378810031",
+        "m_94f07d5d8a295a4aec9d936b",
+        "m_2fd2d0a384c4bca1fb827043",
+        "m_237b5e7d12bb2a1f26cd26f7",
+        "m_7acf6c6dcb8d8461bfe2eca2",
+        "m_f988c89b18c4db9f19ad6546",
+        "m_1dd9e7babafe7da7b83a5574",
+        "m_5fc22e0b74d7e8c22133c501",
+        "m_da8cda2f9d759a8074720c2f",
+        "m_171c4721359cfc50d1fe22fa",
+        "m_c0d9bba0869b7a404e1dcdeb",
+        "m_ab4cebaa0d972a3fc21675d5",
+        "m_30476a8fb337e017403b2f96",
+        "m_6397a7e837d80f5ee2813560",
+        "m_0df3cda1561582da99497fed",
+        "m_b6d11a4e8981e6d07567822d",
+        "m_563a751b4032361f7468ecd3",
+        "m_0519da33b1436c8c43d55f96"
+      ],
+      "winnerId": "p_f5a9fefea65b1bc0b650246a",
+      "loserId": "p_c8a8f1f572e389915ed32e2c",
+      "completedAt": "2026-11-16T09:43:02.952Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T14:41:00+08:00",
+        "endAt": "2026-11-21T14:48:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.952Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_a118e9d892d0e94e494f3ffc",
+      "code": "NM-QF2",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_066a1b305cd1e20b47fbe032"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ef394d08ca0e3db42baaa47e"
+        }
+      ],
+      "dependencies": [
+        "m_b0d99eba783d9f3704db887c",
+        "m_28390271450cee15b465fdcc",
+        "m_9d79b27eb60562bea839181b",
+        "m_e3d23f75ab818d3ed3e0a6bd",
+        "m_34d6adb7fc50b2cbe2a9339b",
+        "m_95b563f9b52c2a1bbffd4671",
+        "m_6314307c223a7a4a451ca06d",
+        "m_25774253acc9ff73610947e2",
+        "m_4bfa15ea721e2f46b10e24f5",
+        "m_b84ea48c1bc5dd28a21e075d",
+        "m_c484fcd151a40ab378810031",
+        "m_94f07d5d8a295a4aec9d936b",
+        "m_2fd2d0a384c4bca1fb827043",
+        "m_237b5e7d12bb2a1f26cd26f7",
+        "m_7acf6c6dcb8d8461bfe2eca2",
+        "m_f988c89b18c4db9f19ad6546",
+        "m_1dd9e7babafe7da7b83a5574",
+        "m_5fc22e0b74d7e8c22133c501",
+        "m_da8cda2f9d759a8074720c2f",
+        "m_171c4721359cfc50d1fe22fa",
+        "m_c0d9bba0869b7a404e1dcdeb",
+        "m_ab4cebaa0d972a3fc21675d5",
+        "m_30476a8fb337e017403b2f96",
+        "m_6397a7e837d80f5ee2813560",
+        "m_0df3cda1561582da99497fed",
+        "m_b6d11a4e8981e6d07567822d",
+        "m_563a751b4032361f7468ecd3",
+        "m_0519da33b1436c8c43d55f96"
+      ],
+      "winnerId": "p_066a1b305cd1e20b47fbe032",
+      "loserId": "p_ef394d08ca0e3db42baaa47e",
+      "completedAt": "2026-11-16T09:43:02.952Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T14:41:00+08:00",
+        "endAt": "2026-11-21T14:48:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.952Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_a17e825733c3b5530b5d1aca",
+      "code": "NM-QF3",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_daabd1dbc750d5397b2aad27"
+        },
+        {
+          "type": "player",
+          "playerId": "p_95b500ee01e13ee1403e1375"
+        }
+      ],
+      "dependencies": [
+        "m_b0d99eba783d9f3704db887c",
+        "m_28390271450cee15b465fdcc",
+        "m_9d79b27eb60562bea839181b",
+        "m_e3d23f75ab818d3ed3e0a6bd",
+        "m_34d6adb7fc50b2cbe2a9339b",
+        "m_95b563f9b52c2a1bbffd4671",
+        "m_6314307c223a7a4a451ca06d",
+        "m_25774253acc9ff73610947e2",
+        "m_4bfa15ea721e2f46b10e24f5",
+        "m_b84ea48c1bc5dd28a21e075d",
+        "m_c484fcd151a40ab378810031",
+        "m_94f07d5d8a295a4aec9d936b",
+        "m_2fd2d0a384c4bca1fb827043",
+        "m_237b5e7d12bb2a1f26cd26f7",
+        "m_7acf6c6dcb8d8461bfe2eca2",
+        "m_f988c89b18c4db9f19ad6546",
+        "m_1dd9e7babafe7da7b83a5574",
+        "m_5fc22e0b74d7e8c22133c501",
+        "m_da8cda2f9d759a8074720c2f",
+        "m_171c4721359cfc50d1fe22fa",
+        "m_c0d9bba0869b7a404e1dcdeb",
+        "m_ab4cebaa0d972a3fc21675d5",
+        "m_30476a8fb337e017403b2f96",
+        "m_6397a7e837d80f5ee2813560",
+        "m_0df3cda1561582da99497fed",
+        "m_b6d11a4e8981e6d07567822d",
+        "m_563a751b4032361f7468ecd3",
+        "m_0519da33b1436c8c43d55f96"
+      ],
+      "winnerId": "p_daabd1dbc750d5397b2aad27",
+      "loserId": "p_95b500ee01e13ee1403e1375",
+      "completedAt": "2026-11-16T09:43:02.953Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T14:41:00+08:00",
+        "endAt": "2026-11-21T14:48:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.953Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_a8e46c8e4bb6f45fc01c0305",
+      "code": "NM-QF4",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_fca5c44f9d4fc0bc2573bda2"
+        },
+        {
+          "type": "player",
+          "playerId": "p_ef0336904e417f73b6bf6948"
+        }
+      ],
+      "dependencies": [
+        "m_b0d99eba783d9f3704db887c",
+        "m_28390271450cee15b465fdcc",
+        "m_9d79b27eb60562bea839181b",
+        "m_e3d23f75ab818d3ed3e0a6bd",
+        "m_34d6adb7fc50b2cbe2a9339b",
+        "m_95b563f9b52c2a1bbffd4671",
+        "m_6314307c223a7a4a451ca06d",
+        "m_25774253acc9ff73610947e2",
+        "m_4bfa15ea721e2f46b10e24f5",
+        "m_b84ea48c1bc5dd28a21e075d",
+        "m_c484fcd151a40ab378810031",
+        "m_94f07d5d8a295a4aec9d936b",
+        "m_2fd2d0a384c4bca1fb827043",
+        "m_237b5e7d12bb2a1f26cd26f7",
+        "m_7acf6c6dcb8d8461bfe2eca2",
+        "m_f988c89b18c4db9f19ad6546",
+        "m_1dd9e7babafe7da7b83a5574",
+        "m_5fc22e0b74d7e8c22133c501",
+        "m_da8cda2f9d759a8074720c2f",
+        "m_171c4721359cfc50d1fe22fa",
+        "m_c0d9bba0869b7a404e1dcdeb",
+        "m_ab4cebaa0d972a3fc21675d5",
+        "m_30476a8fb337e017403b2f96",
+        "m_6397a7e837d80f5ee2813560",
+        "m_0df3cda1561582da99497fed",
+        "m_b6d11a4e8981e6d07567822d",
+        "m_563a751b4032361f7468ecd3",
+        "m_0519da33b1436c8c43d55f96"
+      ],
+      "winnerId": "p_fca5c44f9d4fc0bc2573bda2",
+      "loserId": "p_ef0336904e417f73b6bf6948",
+      "completedAt": "2026-11-16T09:43:02.954Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T14:48:00+08:00",
+        "endAt": "2026-11-21T14:55:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.954Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e2f513122bd01e252cd568b5",
+      "code": "NM-SF1",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 1,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_91721ebe0fe98519be9b1320"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_a118e9d892d0e94e494f3ffc"
+        }
+      ],
+      "dependencies": [
+        "m_91721ebe0fe98519be9b1320",
+        "m_a118e9d892d0e94e494f3ffc"
+      ],
+      "winnerId": "p_f5a9fefea65b1bc0b650246a",
+      "loserId": "p_066a1b305cd1e20b47fbe032",
+      "completedAt": "2026-11-16T09:43:02.954Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T14:58:00+08:00",
+        "endAt": "2026-11-21T15:05:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.954Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_e0044fae4045deae37f6c0d2",
+      "code": "NM-SF2",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 1,
+      "order": 1,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_a17e825733c3b5530b5d1aca"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_a8e46c8e4bb6f45fc01c0305"
+        }
+      ],
+      "dependencies": [
+        "m_a17e825733c3b5530b5d1aca",
+        "m_a8e46c8e4bb6f45fc01c0305"
+      ],
+      "winnerId": "p_daabd1dbc750d5397b2aad27",
+      "loserId": "p_fca5c44f9d4fc0bc2573bda2",
+      "completedAt": "2026-11-16T09:43:02.955Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T15:56:00+08:00",
+        "endAt": "2026-11-21T16:03:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.955Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_1273fa5a346d414601e9d747",
+      "code": "NM-F",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "final",
+      "phaseLabel": "决赛",
+      "roundIndex": 2,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_e2f513122bd01e252cd568b5"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_e0044fae4045deae37f6c0d2"
+        }
+      ],
+      "dependencies": [
+        "m_e2f513122bd01e252cd568b5",
+        "m_e0044fae4045deae37f6c0d2"
+      ],
+      "winnerId": "p_daabd1dbc750d5397b2aad27",
+      "loserId": "p_f5a9fefea65b1bc0b650246a",
+      "completedAt": "2026-11-16T09:43:02.955Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T16:40:00+08:00",
+        "endAt": "2026-11-21T16:47:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.955Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_c68f67d9f59728b6aee38dbb",
+      "code": "NM-3RD",
+      "group": "new_men",
+      "groupId": null,
+      "phase": "third",
+      "phaseLabel": "季军赛",
+      "roundIndex": 2,
+      "order": 1,
+      "slots": [
+        {
+          "type": "loser",
+          "matchId": "m_e2f513122bd01e252cd568b5"
+        },
+        {
+          "type": "loser",
+          "matchId": "m_e0044fae4045deae37f6c0d2"
+        }
+      ],
+      "dependencies": [
+        "m_e2f513122bd01e252cd568b5",
+        "m_e0044fae4045deae37f6c0d2"
+      ],
+      "winnerId": "p_066a1b305cd1e20b47fbe032",
+      "loserId": "p_fca5c44f9d4fc0bc2573bda2",
+      "completedAt": "2026-11-16T09:43:02.955Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T16:40:00+08:00",
+        "endAt": "2026-11-21T16:47:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.955Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_89f67b41ed6537c4d7f19769",
+      "code": "NW-QF1",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 0,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_b1280e55820656e9f8a9b2be"
+        },
+        {
+          "type": "player",
+          "playerId": "p_5da16f2779890cdbbc829cf1"
+        }
+      ],
+      "dependencies": [
+        "m_b2bfc0470ddf041d3b1c40e0",
+        "m_3f60b10913631300a58ac13c",
+        "m_bce94103e99f49eae4934ecc",
+        "m_d3ab5c2f955226a0e07b7dbe",
+        "m_ecae067ad0fdc8af3792eea6",
+        "m_7d3d3abf9d27d9e0d38f22ac",
+        "m_55c32e765d56e15bf9050bcf",
+        "m_ea37c5865f0d2a6fe84b87ba",
+        "m_2a277a76213ae73874cd0c4c",
+        "m_5d87931c591b09b652e8e2ba",
+        "m_9e0f5cb8c66ec5bd128b82c1",
+        "m_e613e4c69fed33471528364e",
+        "m_02912af800b32dbfe4a8ebd3",
+        "m_fc631c7f7d857ac7b8184624",
+        "m_ba40b579ecb3cea14d4fbe17",
+        "m_44368eee0c50947e8a9ac93b",
+        "m_bcae2a6f16b10b18d2ea1f3f",
+        "m_487246dbbf5827d7cb0eba1e",
+        "m_9b39f1f1e0d5192a7d76639d",
+        "m_7296dafba4f9e03155d387e7",
+        "m_2a1b6fc64ff2122d4ce785ea",
+        "m_17a56724b20e0ce92c29b809",
+        "m_9b15985b47ed3c6071f16493",
+        "m_11110f7b5bc3d2c7018451ee",
+        "m_685738617fadc2731ce35c60",
+        "m_22c73e114f3b390e4c5f4738",
+        "m_74a48b687dbcd389ffbfe866",
+        "m_cb61e731c3d942957b5bd30b",
+        "m_25d65f61eb655a410e8b0dd5",
+        "m_1c9ed4c4ed878b0cf843babd",
+        "m_587c2f32852d8fc5c341d625",
+        "m_3e17ca4e137db5e8a55a105c",
+        "m_44c59905207117d124e02e84",
+        "m_df6c70a2fcf7e896a01f8f5f",
+        "m_c6e5d24d14c1883898827495",
+        "m_da1e5689ef27833c86c1a56e"
+      ],
+      "winnerId": "p_b1280e55820656e9f8a9b2be",
+      "loserId": "p_5da16f2779890cdbbc829cf1",
+      "completedAt": "2026-11-16T09:43:02.955Z",
+      "notes": "",
+      "schedule": {
+        "court": 1,
+        "startAt": "2026-11-21T15:08:00+08:00",
+        "endAt": "2026-11-21T15:15:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.955Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_74de01a81748b7166b579eba",
+      "code": "NW-QF2",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 1,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_7cb8c4db16b28a4668a1c53f"
+        },
+        {
+          "type": "player",
+          "playerId": "p_812563e769711f84516b4f37"
+        }
+      ],
+      "dependencies": [
+        "m_b2bfc0470ddf041d3b1c40e0",
+        "m_3f60b10913631300a58ac13c",
+        "m_bce94103e99f49eae4934ecc",
+        "m_d3ab5c2f955226a0e07b7dbe",
+        "m_ecae067ad0fdc8af3792eea6",
+        "m_7d3d3abf9d27d9e0d38f22ac",
+        "m_55c32e765d56e15bf9050bcf",
+        "m_ea37c5865f0d2a6fe84b87ba",
+        "m_2a277a76213ae73874cd0c4c",
+        "m_5d87931c591b09b652e8e2ba",
+        "m_9e0f5cb8c66ec5bd128b82c1",
+        "m_e613e4c69fed33471528364e",
+        "m_02912af800b32dbfe4a8ebd3",
+        "m_fc631c7f7d857ac7b8184624",
+        "m_ba40b579ecb3cea14d4fbe17",
+        "m_44368eee0c50947e8a9ac93b",
+        "m_bcae2a6f16b10b18d2ea1f3f",
+        "m_487246dbbf5827d7cb0eba1e",
+        "m_9b39f1f1e0d5192a7d76639d",
+        "m_7296dafba4f9e03155d387e7",
+        "m_2a1b6fc64ff2122d4ce785ea",
+        "m_17a56724b20e0ce92c29b809",
+        "m_9b15985b47ed3c6071f16493",
+        "m_11110f7b5bc3d2c7018451ee",
+        "m_685738617fadc2731ce35c60",
+        "m_22c73e114f3b390e4c5f4738",
+        "m_74a48b687dbcd389ffbfe866",
+        "m_cb61e731c3d942957b5bd30b",
+        "m_25d65f61eb655a410e8b0dd5",
+        "m_1c9ed4c4ed878b0cf843babd",
+        "m_587c2f32852d8fc5c341d625",
+        "m_3e17ca4e137db5e8a55a105c",
+        "m_44c59905207117d124e02e84",
+        "m_df6c70a2fcf7e896a01f8f5f",
+        "m_c6e5d24d14c1883898827495",
+        "m_da1e5689ef27833c86c1a56e"
+      ],
+      "winnerId": "p_7cb8c4db16b28a4668a1c53f",
+      "loserId": "p_812563e769711f84516b4f37",
+      "completedAt": "2026-11-16T09:43:02.956Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T15:08:00+08:00",
+        "endAt": "2026-11-21T15:15:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.956Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_4226ecd3d4b81e35c98c085f",
+      "code": "NW-QF3",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 2,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_65c2a98e008a32afffc4c27d"
+        },
+        {
+          "type": "player",
+          "playerId": "p_5cbc90812d3008604c0fa350"
+        }
+      ],
+      "dependencies": [
+        "m_b2bfc0470ddf041d3b1c40e0",
+        "m_3f60b10913631300a58ac13c",
+        "m_bce94103e99f49eae4934ecc",
+        "m_d3ab5c2f955226a0e07b7dbe",
+        "m_ecae067ad0fdc8af3792eea6",
+        "m_7d3d3abf9d27d9e0d38f22ac",
+        "m_55c32e765d56e15bf9050bcf",
+        "m_ea37c5865f0d2a6fe84b87ba",
+        "m_2a277a76213ae73874cd0c4c",
+        "m_5d87931c591b09b652e8e2ba",
+        "m_9e0f5cb8c66ec5bd128b82c1",
+        "m_e613e4c69fed33471528364e",
+        "m_02912af800b32dbfe4a8ebd3",
+        "m_fc631c7f7d857ac7b8184624",
+        "m_ba40b579ecb3cea14d4fbe17",
+        "m_44368eee0c50947e8a9ac93b",
+        "m_bcae2a6f16b10b18d2ea1f3f",
+        "m_487246dbbf5827d7cb0eba1e",
+        "m_9b39f1f1e0d5192a7d76639d",
+        "m_7296dafba4f9e03155d387e7",
+        "m_2a1b6fc64ff2122d4ce785ea",
+        "m_17a56724b20e0ce92c29b809",
+        "m_9b15985b47ed3c6071f16493",
+        "m_11110f7b5bc3d2c7018451ee",
+        "m_685738617fadc2731ce35c60",
+        "m_22c73e114f3b390e4c5f4738",
+        "m_74a48b687dbcd389ffbfe866",
+        "m_cb61e731c3d942957b5bd30b",
+        "m_25d65f61eb655a410e8b0dd5",
+        "m_1c9ed4c4ed878b0cf843babd",
+        "m_587c2f32852d8fc5c341d625",
+        "m_3e17ca4e137db5e8a55a105c",
+        "m_44c59905207117d124e02e84",
+        "m_df6c70a2fcf7e896a01f8f5f",
+        "m_c6e5d24d14c1883898827495",
+        "m_da1e5689ef27833c86c1a56e"
+      ],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_5cbc90812d3008604c0fa350",
+      "completedAt": "2026-11-16T09:43:02.956Z",
+      "notes": "",
+      "schedule": {
+        "court": 3,
+        "startAt": "2026-11-21T15:08:00+08:00",
+        "endAt": "2026-11-21T15:15:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.956Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_69c1f704ed3eece175842aa9",
+      "code": "NW-QF4",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "qf",
+      "phaseLabel": "八强",
+      "roundIndex": 0,
+      "order": 3,
+      "slots": [
+        {
+          "type": "player",
+          "playerId": "p_12c60d66a7c7a649294e70a0"
+        },
+        {
+          "type": "player",
+          "playerId": "p_aeedd4303d1827c423acabbc"
+        }
+      ],
+      "dependencies": [
+        "m_b2bfc0470ddf041d3b1c40e0",
+        "m_3f60b10913631300a58ac13c",
+        "m_bce94103e99f49eae4934ecc",
+        "m_d3ab5c2f955226a0e07b7dbe",
+        "m_ecae067ad0fdc8af3792eea6",
+        "m_7d3d3abf9d27d9e0d38f22ac",
+        "m_55c32e765d56e15bf9050bcf",
+        "m_ea37c5865f0d2a6fe84b87ba",
+        "m_2a277a76213ae73874cd0c4c",
+        "m_5d87931c591b09b652e8e2ba",
+        "m_9e0f5cb8c66ec5bd128b82c1",
+        "m_e613e4c69fed33471528364e",
+        "m_02912af800b32dbfe4a8ebd3",
+        "m_fc631c7f7d857ac7b8184624",
+        "m_ba40b579ecb3cea14d4fbe17",
+        "m_44368eee0c50947e8a9ac93b",
+        "m_bcae2a6f16b10b18d2ea1f3f",
+        "m_487246dbbf5827d7cb0eba1e",
+        "m_9b39f1f1e0d5192a7d76639d",
+        "m_7296dafba4f9e03155d387e7",
+        "m_2a1b6fc64ff2122d4ce785ea",
+        "m_17a56724b20e0ce92c29b809",
+        "m_9b15985b47ed3c6071f16493",
+        "m_11110f7b5bc3d2c7018451ee",
+        "m_685738617fadc2731ce35c60",
+        "m_22c73e114f3b390e4c5f4738",
+        "m_74a48b687dbcd389ffbfe866",
+        "m_cb61e731c3d942957b5bd30b",
+        "m_25d65f61eb655a410e8b0dd5",
+        "m_1c9ed4c4ed878b0cf843babd",
+        "m_587c2f32852d8fc5c341d625",
+        "m_3e17ca4e137db5e8a55a105c",
+        "m_44c59905207117d124e02e84",
+        "m_df6c70a2fcf7e896a01f8f5f",
+        "m_c6e5d24d14c1883898827495",
+        "m_da1e5689ef27833c86c1a56e"
+      ],
+      "winnerId": "p_12c60d66a7c7a649294e70a0",
+      "loserId": "p_aeedd4303d1827c423acabbc",
+      "completedAt": "2026-11-16T09:43:02.957Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T15:08:00+08:00",
+        "endAt": "2026-11-21T15:15:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.957Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_7a4dc4796c72088b86f7727e",
+      "code": "NW-SF1",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 1,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_89f67b41ed6537c4d7f19769"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_74de01a81748b7166b579eba"
+        }
+      ],
+      "dependencies": [
+        "m_89f67b41ed6537c4d7f19769",
+        "m_74de01a81748b7166b579eba"
+      ],
+      "winnerId": "p_b1280e55820656e9f8a9b2be",
+      "loserId": "p_7cb8c4db16b28a4668a1c53f",
+      "completedAt": "2026-11-16T09:43:02.958Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T15:49:00+08:00",
+        "endAt": "2026-11-21T15:56:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.958Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_496d4246b0683b738cfc4dd0",
+      "code": "NW-SF2",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "sf",
+      "phaseLabel": "半决赛",
+      "roundIndex": 1,
+      "order": 1,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_4226ecd3d4b81e35c98c085f"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_69c1f704ed3eece175842aa9"
+        }
+      ],
+      "dependencies": [
+        "m_4226ecd3d4b81e35c98c085f",
+        "m_69c1f704ed3eece175842aa9"
+      ],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_12c60d66a7c7a649294e70a0",
+      "completedAt": "2026-11-16T09:43:02.958Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T16:03:00+08:00",
+        "endAt": "2026-11-21T16:10:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.958Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_09559c1df5bef577f1e9d742",
+      "code": "NW-F",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "final",
+      "phaseLabel": "决赛",
+      "roundIndex": 2,
+      "order": 0,
+      "slots": [
+        {
+          "type": "winner",
+          "matchId": "m_7a4dc4796c72088b86f7727e"
+        },
+        {
+          "type": "winner",
+          "matchId": "m_496d4246b0683b738cfc4dd0"
+        }
+      ],
+      "dependencies": [
+        "m_7a4dc4796c72088b86f7727e",
+        "m_496d4246b0683b738cfc4dd0"
+      ],
+      "winnerId": "p_65c2a98e008a32afffc4c27d",
+      "loserId": "p_b1280e55820656e9f8a9b2be",
+      "completedAt": "2026-11-16T09:43:02.958Z",
+      "notes": "",
+      "schedule": {
+        "court": 2,
+        "startAt": "2026-11-21T16:40:00+08:00",
+        "endAt": "2026-11-21T16:47:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.958Z"
+      },
+      "revision": 1
+    },
+    {
+      "id": "m_5bde84693823a36d93ddb94d",
+      "code": "NW-3RD",
+      "group": "new_women",
+      "groupId": null,
+      "phase": "third",
+      "phaseLabel": "季军赛",
+      "roundIndex": 2,
+      "order": 1,
+      "slots": [
+        {
+          "type": "loser",
+          "matchId": "m_7a4dc4796c72088b86f7727e"
+        },
+        {
+          "type": "loser",
+          "matchId": "m_496d4246b0683b738cfc4dd0"
+        }
+      ],
+      "dependencies": [
+        "m_7a4dc4796c72088b86f7727e",
+        "m_496d4246b0683b738cfc4dd0"
+      ],
+      "winnerId": "p_7cb8c4db16b28a4668a1c53f",
+      "loserId": "p_12c60d66a7c7a649294e70a0",
+      "completedAt": "2026-11-16T09:43:02.958Z",
+      "notes": "",
+      "schedule": {
+        "court": 4,
+        "startAt": "2026-11-21T16:44:00+08:00",
+        "endAt": "2026-11-21T16:51:00+08:00",
+        "estimatedMinutes": 7,
+        "status": "completed",
+        "actualStartAt": null,
+        "actualEndAt": "2026-11-16T09:43:02.958Z"
+      },
+      "revision": 1
+    }
+  ],
+  "groupResolutions": {},
+  "settings": {
+    "restMinutes": 10,
+    "dayWindows": [
+      {
+        "label": "上午",
+        "start": "09:00",
+        "end": "12:00"
+      },
+      {
+        "label": "下午",
+        "start": "14:00",
+        "end": "18:00"
+      }
+    ],
+    "durations": {
+      "new": 7,
+      "advanced": 17,
+      "advancedWarmupMinutes": 2
+    },
+    "pointsByPlace": {
+      "1": 10,
+      "2": 8,
+      "3": 6,
+      "4": 5,
+      "5": 3,
+      "6": 2,
+      "7": 1,
+      "8": 0
+    },
+    "teamRankingMode": "sum",
+    "drawLocked": false
+  },
+  "audit": [
+    {
+      "id": "audit_488b249b63ccf370efd7c753",
+      "at": "2026-11-16T09:43:03.048Z",
+      "action": "自动排场",
+      "detail": "已安排128/128场；保留128场已开始或完成比赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_fe1195c0da0fdc57f5852091",
+      "at": "2026-11-16T09:43:02.979Z",
+      "action": "确认比赛结果",
+      "detail": "AW-3RD：刘清和胜 胡景行",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c90fe433e98f51826a32c48f",
+      "at": "2026-11-16T09:43:02.979Z",
+      "action": "确认比赛结果",
+      "detail": "AW-F：罗怀瑾胜 郭可心",
+      "source": "admin"
+    },
+    {
+      "id": "audit_3d819e94998c97bb02c1e300",
+      "at": "2026-11-16T09:43:02.979Z",
+      "action": "确认比赛结果",
+      "detail": "AW-SF2：罗怀瑾胜 胡景行",
+      "source": "admin"
+    },
+    {
+      "id": "audit_bacbd55abe85954a50c5893e",
+      "at": "2026-11-16T09:43:02.979Z",
+      "action": "确认比赛结果",
+      "detail": "AW-SF1：郭可心胜 刘清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c60cc944930fded98fdef624",
+      "at": "2026-11-16T09:43:02.978Z",
+      "action": "确认比赛结果",
+      "detail": "AW-QF4：胡景行胜 王一诺",
+      "source": "admin"
+    },
+    {
+      "id": "audit_b105e453515ce6c4f6357da7",
+      "at": "2026-11-16T09:43:02.978Z",
+      "action": "确认比赛结果",
+      "detail": "AW-QF3：罗怀瑾胜 朱嘉宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_637c22378e412315e715769a",
+      "at": "2026-11-16T09:43:02.978Z",
+      "action": "确认比赛结果",
+      "detail": "AW-QF2：刘清和胜 李书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_d8a6036aa0d12e2a094444bd",
+      "at": "2026-11-16T09:43:02.978Z",
+      "action": "确认比赛结果",
+      "detail": "AW-QF1：郭可心胜 何诗雨",
+      "source": "admin"
+    },
+    {
+      "id": "audit_fc27d909d9a0f390a1103316",
+      "at": "2026-11-16T09:43:02.977Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-8：王一诺胜 林若溪",
+      "source": "admin"
+    },
+    {
+      "id": "audit_5cba2bd030561e9e535e425e",
+      "at": "2026-11-16T09:43:02.977Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-7：胡景行胜 张云帆",
+      "source": "admin"
+    },
+    {
+      "id": "audit_16d8f0199d9b210b0254b3b2",
+      "at": "2026-11-16T09:43:02.976Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-6：朱嘉宁胜 陈锦程",
+      "source": "admin"
+    },
+    {
+      "id": "audit_aa46671484522821b9cf7f2d",
+      "at": "2026-11-16T09:43:02.976Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-5：罗怀瑾胜 马沐晴",
+      "source": "admin"
+    },
+    {
+      "id": "audit_04a2efdae4ce6b728dc4b88c",
+      "at": "2026-11-16T09:43:02.975Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-4：李书航胜 杨云帆",
+      "source": "admin"
+    },
+    {
+      "id": "audit_a3b3292170793c4a0eec4f52",
+      "at": "2026-11-16T09:43:02.975Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-3：刘清和胜 林晨阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_329f123cfe7a9a352a349558",
+      "at": "2026-11-16T09:43:02.975Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-2：何诗雨胜 黄睿泽",
+      "source": "admin"
+    },
+    {
+      "id": "audit_83f237a99827ee79e39bc8b3",
+      "at": "2026-11-16T09:43:02.974Z",
+      "action": "确认比赛结果",
+      "detail": "AW-R16-1：郭可心胜 赵书瑶",
+      "source": "admin"
+    },
+    {
+      "id": "audit_04f4708a200e0c75227706b2",
+      "at": "2026-11-16T09:43:02.974Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q8：林若溪胜 李云帆",
+      "source": "admin"
+    },
+    {
+      "id": "audit_ab7093307b4274b5e8551bd3",
+      "at": "2026-11-16T09:43:02.973Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q7：张云帆胜 林语晨",
+      "source": "admin"
+    },
+    {
+      "id": "audit_f2c5282ad096b114dd1fc934",
+      "at": "2026-11-16T09:43:02.972Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q6：陈锦程胜 马乐彤",
+      "source": "admin"
+    },
+    {
+      "id": "audit_3c259e6d642a978e8d536743",
+      "at": "2026-11-16T09:43:02.972Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q5：马沐晴胜 徐承宇",
+      "source": "admin"
+    },
+    {
+      "id": "audit_5c4824cac2fabbf052300713",
+      "at": "2026-11-16T09:43:02.971Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q4：杨云帆胜 周思远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_b5ab86634fe4c6d2c735b4c7",
+      "at": "2026-11-16T09:43:02.971Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q3：林晨阳胜 林诗雨",
+      "source": "admin"
+    },
+    {
+      "id": "audit_9c6a1008ec97a7668ef46ce7",
+      "at": "2026-11-16T09:43:02.970Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q2：黄睿泽胜 陈可心",
+      "source": "admin"
+    },
+    {
+      "id": "audit_68a8d778c9f15701eb40c45a",
+      "at": "2026-11-16T09:43:02.969Z",
+      "action": "确认比赛结果",
+      "detail": "AW-Q1：赵书瑶胜 李青禾",
+      "source": "admin"
+    },
+    {
+      "id": "audit_606da7d9877576ba89cafb13",
+      "at": "2026-11-16T09:43:02.969Z",
+      "action": "确认比赛结果",
+      "detail": "AM-3RD：黄映雪胜 高文博",
+      "source": "admin"
+    },
+    {
+      "id": "audit_73e3271abef79ae53a6ec3c1",
+      "at": "2026-11-16T09:43:02.969Z",
+      "action": "确认比赛结果",
+      "detail": "AM-F：孙皓月胜 赵雨桐",
+      "source": "admin"
+    },
+    {
+      "id": "audit_e4d2a8e7351cd536b6aa11c9",
+      "at": "2026-11-16T09:43:02.968Z",
+      "action": "确认比赛结果",
+      "detail": "AM-SF2：孙皓月胜 高文博",
+      "source": "admin"
+    },
+    {
+      "id": "audit_8c5e5b159944a4c381516a01",
+      "at": "2026-11-16T09:43:02.968Z",
+      "action": "确认比赛结果",
+      "detail": "AM-SF1：赵雨桐胜 黄映雪",
+      "source": "admin"
+    },
+    {
+      "id": "audit_40ab42ddd95572d2136f8b30",
+      "at": "2026-11-16T09:43:02.968Z",
+      "action": "确认比赛结果",
+      "detail": "AM-QF4：高文博胜 胡清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_7bb1fd072c1fe05a9c6c32f3",
+      "at": "2026-11-16T09:43:02.968Z",
+      "action": "确认比赛结果",
+      "detail": "AM-QF3：孙皓月胜 何皓月",
+      "source": "admin"
+    },
+    {
+      "id": "audit_fe88c08f5d592e3d4750bd02",
+      "at": "2026-11-16T09:43:02.967Z",
+      "action": "确认比赛结果",
+      "detail": "AM-QF2：黄映雪胜 杨亦凡",
+      "source": "admin"
+    },
+    {
+      "id": "audit_5895853e1e868b1c8ed2c3a0",
+      "at": "2026-11-16T09:43:02.967Z",
+      "action": "确认比赛结果",
+      "detail": "AM-QF1：赵雨桐胜 高诗雨",
+      "source": "admin"
+    },
+    {
+      "id": "audit_0e27dc5355e8597c4c5ae78f",
+      "at": "2026-11-16T09:43:02.967Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-8：胡清和胜 黄云帆",
+      "source": "admin"
+    },
+    {
+      "id": "audit_17be2b349e5dc79f067b9806",
+      "at": "2026-11-16T09:43:02.967Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-7：高文博胜 何泽宇",
+      "source": "admin"
+    },
+    {
+      "id": "audit_093ed1d0b78ff9082c29cc07",
+      "at": "2026-11-16T09:43:02.967Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-6：何皓月胜 何沐阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_5a3d138a03fbf409f59cd1a3",
+      "at": "2026-11-16T09:43:02.966Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-5：孙皓月胜 陈睿泽",
+      "source": "admin"
+    },
+    {
+      "id": "audit_80c8a031a58822278feb6e78",
+      "at": "2026-11-16T09:43:02.966Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-4：杨亦凡胜 周亦凡",
+      "source": "admin"
+    },
+    {
+      "id": "audit_d4db0452279045af0046d987",
+      "at": "2026-11-16T09:43:02.966Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-3：黄映雪胜 罗亦凡",
+      "source": "admin"
+    },
+    {
+      "id": "audit_b2c94de081f84806b7737902",
+      "at": "2026-11-16T09:43:02.965Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-2：高诗雨胜 林知远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_9f10c32f85f2ecd0d7bb104d",
+      "at": "2026-11-16T09:43:02.965Z",
+      "action": "确认比赛结果",
+      "detail": "AM-R16-1：赵雨桐胜 王和风",
+      "source": "admin"
+    },
+    {
+      "id": "audit_f5ac8f581cdb68eb3ca9b9e1",
+      "at": "2026-11-16T09:43:02.965Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q8：黄云帆胜 何亦凡",
+      "source": "admin"
+    },
+    {
+      "id": "audit_e593391ec8e647449e418ee1",
+      "at": "2026-11-16T09:43:02.964Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q7：何泽宇胜 朱雨桐",
+      "source": "admin"
+    },
+    {
+      "id": "audit_43980ae8903bd85c659f6a6b",
+      "at": "2026-11-16T09:43:02.964Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q6：何沐阳胜 李欣怡",
+      "source": "admin"
+    },
+    {
+      "id": "audit_2ea8c90054c05f96b49f87f5",
+      "at": "2026-11-16T09:43:02.963Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q5：陈睿泽胜 徐书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_83378bba43b46838779abaed",
+      "at": "2026-11-16T09:43:02.962Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q4：周亦凡胜 黄弘毅",
+      "source": "admin"
+    },
+    {
+      "id": "audit_8708ab34ff2b66f337c083da",
+      "at": "2026-11-16T09:43:02.961Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q3：罗亦凡胜 孙映雪",
+      "source": "admin"
+    },
+    {
+      "id": "audit_33fb54c2f9411390f98b9562",
+      "at": "2026-11-16T09:43:02.960Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q2：林知远胜 陈欣怡",
+      "source": "admin"
+    },
+    {
+      "id": "audit_979652c158dfec8ed11992bd",
+      "at": "2026-11-16T09:43:02.959Z",
+      "action": "确认比赛结果",
+      "detail": "AM-Q1：王和风胜 徐诗雨",
+      "source": "admin"
+    },
+    {
+      "id": "audit_4e5ac3d3c200d8e147c388f1",
+      "at": "2026-11-16T09:43:02.958Z",
+      "action": "确认比赛结果",
+      "detail": "NW-3RD：罗睿泽胜 黄思源",
+      "source": "admin"
+    },
+    {
+      "id": "audit_1f83aa9168d00cc085666eec",
+      "at": "2026-11-16T09:43:02.958Z",
+      "action": "确认比赛结果",
+      "detail": "NW-F：高知夏胜 吴明轩",
+      "source": "admin"
+    },
+    {
+      "id": "audit_462b1aa9e90345eaaea86162",
+      "at": "2026-11-16T09:43:02.958Z",
+      "action": "确认比赛结果",
+      "detail": "NW-SF2：高知夏胜 黄思源",
+      "source": "admin"
+    },
+    {
+      "id": "audit_008a96e6ec58726cd489eec0",
+      "at": "2026-11-16T09:43:02.958Z",
+      "action": "确认比赛结果",
+      "detail": "NW-SF1：吴明轩胜 罗睿泽",
+      "source": "admin"
+    },
+    {
+      "id": "audit_cdbe16a8112365d4566525f9",
+      "at": "2026-11-16T09:43:02.957Z",
+      "action": "确认比赛结果",
+      "detail": "NW-QF4：黄思源胜 高思源",
+      "source": "admin"
+    },
+    {
+      "id": "audit_d58a55d3e32250cc9eb61226",
+      "at": "2026-11-16T09:43:02.956Z",
+      "action": "确认比赛结果",
+      "detail": "NW-QF3：高知夏胜 杨清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_a7a3a3d88d92b63043cd3309",
+      "at": "2026-11-16T09:43:02.956Z",
+      "action": "确认比赛结果",
+      "detail": "NW-QF2：罗睿泽胜 刘致远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_402c28b5bffdd3db63799ae1",
+      "at": "2026-11-16T09:43:02.955Z",
+      "action": "确认比赛结果",
+      "detail": "NW-QF1：吴明轩胜 胡沐阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_caadb782718652dd7484945d",
+      "at": "2026-11-16T09:43:02.955Z",
+      "action": "确认比赛结果",
+      "detail": "NM-3RD：李沐晴胜 何清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_e275608dc3c3627ff4ebffba",
+      "at": "2026-11-16T09:43:02.955Z",
+      "action": "确认比赛结果",
+      "detail": "NM-F：孙睿泽胜 黄晨阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_7cadce3afd750188addedb5d",
+      "at": "2026-11-16T09:43:02.955Z",
+      "action": "确认比赛结果",
+      "detail": "NM-SF2：孙睿泽胜 何清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_640e060750195068cbd9816c",
+      "at": "2026-11-16T09:43:02.954Z",
+      "action": "确认比赛结果",
+      "detail": "NM-SF1：黄晨阳胜 李沐晴",
+      "source": "admin"
+    },
+    {
+      "id": "audit_a4809c5a03519061537622b4",
+      "at": "2026-11-16T09:43:02.954Z",
+      "action": "确认比赛结果",
+      "detail": "NM-QF4：何清越胜 周嘉宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_57b1ae199f32e142651da8fc",
+      "at": "2026-11-16T09:43:02.953Z",
+      "action": "确认比赛结果",
+      "detail": "NM-QF3：孙睿泽胜 徐弘文",
+      "source": "admin"
+    },
+    {
+      "id": "audit_90c3bab268e286d0c6dc6a4c",
+      "at": "2026-11-16T09:43:02.952Z",
+      "action": "确认比赛结果",
+      "detail": "NM-QF2：李沐晴胜 胡若溪",
+      "source": "admin"
+    },
+    {
+      "id": "audit_179e73cb66a62c6ab09ef5ed",
+      "at": "2026-11-16T09:43:02.952Z",
+      "action": "确认比赛结果",
+      "detail": "NM-QF1：黄晨阳胜 吴云帆",
+      "source": "admin"
+    },
+    {
+      "id": "audit_ac4d05e7b6642465ae05a79d",
+      "at": "2026-11-16T09:43:02.945Z",
+      "action": "自动排场",
+      "detail": "已安排128/128场；保留0场已开始或完成比赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_151fdd96b1246c67b8f3b955",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "生成八强随机签表",
+      "detail": "新手女子八强已生成，首轮已避免同组第一与第二相遇。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_6ca6b63bf56942ebad0c7b20",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "确认比赛结果",
+      "detail": "NW-D组-36：黄清和胜 罗以宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_08c39a89bad577770ee6b1d6",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "确认比赛结果",
+      "detail": "NW-D组-35：刘致远胜 罗以宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_f0a6f30b860b4c274faef410",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "确认比赛结果",
+      "detail": "NW-D组-34：刘致远胜 黄清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_b15d660be8b5d4c6c9de8add",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "确认比赛结果",
+      "detail": "NW-D组-33：黄思源胜 罗以宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_072fd2c2f6c85ad598345a58",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "确认比赛结果",
+      "detail": "NW-D组-32：黄思源胜 黄清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_68227cf8ad761dff21d5ec63",
+      "at": "2026-11-16T09:43:02.854Z",
+      "action": "确认比赛结果",
+      "detail": "NW-D组-31：黄思源胜 刘致远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_7ebc6bcf7412158cb9676a7e",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-30：刘青禾胜 朱泽宇",
+      "source": "admin"
+    },
+    {
+      "id": "audit_0c006483c77a6fb2a8840e6f",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-29：罗俊逸胜 朱泽宇",
+      "source": "admin"
+    },
+    {
+      "id": "audit_efaabf175d0eb250ff11dc24",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-28：罗俊逸胜 刘青禾",
+      "source": "admin"
+    },
+    {
+      "id": "audit_149611e4b83e10a9476777e3",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-27：胡沐阳胜 朱泽宇",
+      "source": "admin"
+    },
+    {
+      "id": "audit_6da3d47a8fea943803b9436c",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-26：胡沐阳胜 刘青禾",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c8b1825192824c8a8016e930",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-25：胡沐阳胜 罗俊逸",
+      "source": "admin"
+    },
+    {
+      "id": "audit_48f9728f7973312de9b56621",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-24：罗睿泽胜 朱泽宇",
+      "source": "admin"
+    },
+    {
+      "id": "audit_ea95726b8624a1c7ac80d816",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-23：罗睿泽胜 刘青禾",
+      "source": "admin"
+    },
+    {
+      "id": "audit_575cb2b6fbb0727a2abfaa88",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-22：罗睿泽胜 罗俊逸",
+      "source": "admin"
+    },
+    {
+      "id": "audit_6be9b5dfba2ff5d471d830f5",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-C组-21：罗睿泽胜 胡沐阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_b6b6eb8ba68d6fcebf69fc8b",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-20：胡清越胜 郭书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_20671f7ded51d467673ee12e",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-19：吴知夏胜 郭书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_cace82f10fc14fd6c1ae836a",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-18：吴知夏胜 胡清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_649657c711808b9807c40337",
+      "at": "2026-11-16T09:43:02.853Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-17：高思源胜 郭书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c02f29f6cf96d12604ca46a6",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-16：高思源胜 胡清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_4b4f58f53e651c5216a9fcfd",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-15：高思源胜 吴知夏",
+      "source": "admin"
+    },
+    {
+      "id": "audit_1ff2433eba7b5984c73c8283",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-14：高知夏胜 郭书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_3e46f7054d5fa6320f512e18",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-13：高知夏胜 胡清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_5db0b13e062c3f4dee8b79df",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-12：高知夏胜 吴知夏",
+      "source": "admin"
+    },
+    {
+      "id": "audit_7262e968c70e1d1706c53718",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-B组-11：高知夏胜 高思源",
+      "source": "admin"
+    },
+    {
+      "id": "audit_88018bf9c48ad592c9c13ed8",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-10：何子涵胜 孙致远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_183c2d45016927c342ac12c8",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-09：郭以宁胜 孙致远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_db211c862c7d5415d4248108",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-08：郭以宁胜 何子涵",
+      "source": "admin"
+    },
+    {
+      "id": "audit_42cc9847a4e91574cda821a8",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-07：杨清越胜 孙致远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c10f4f1bcb5dc8eb88bad0bf",
+      "at": "2026-11-16T09:43:02.852Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-06：杨清越胜 何子涵",
+      "source": "admin"
+    },
+    {
+      "id": "audit_ed34ba3c9dbe8715b86102ae",
+      "at": "2026-11-16T09:43:02.851Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-05：杨清越胜 郭以宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_807ef5162edbc011ce7f96a4",
+      "at": "2026-11-16T09:43:02.851Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-04：吴明轩胜 孙致远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_509717daa522d1430daf2895",
+      "at": "2026-11-16T09:43:02.851Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-03：吴明轩胜 何子涵",
+      "source": "admin"
+    },
+    {
+      "id": "audit_34044874acbd90acf66d16d9",
+      "at": "2026-11-16T09:43:02.851Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-02：吴明轩胜 郭以宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c258351f6f5a3ac64e5b1d45",
+      "at": "2026-11-16T09:43:02.851Z",
+      "action": "确认比赛结果",
+      "detail": "NW-A组-01：吴明轩胜 杨清越",
+      "source": "admin"
+    },
+    {
+      "id": "audit_1b51019f4313b9c2fd62fa8e",
+      "at": "2026-11-16T09:43:02.851Z",
+      "action": "生成八强随机签表",
+      "detail": "新手男子八强已生成，首轮已避免同组第一与第二相遇。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_cd4bdfc7a89d98e88719c377",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-D组-28：赵皓月胜 高晨阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_83e5958b71ce842f1b635311",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-D组-27：胡若溪胜 高晨阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_029ab384bcbbe5b46c8efa4c",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-D组-26：胡若溪胜 赵皓月",
+      "source": "admin"
+    },
+    {
+      "id": "audit_01497b1154eae6e41b72d38e",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-D组-25：何清越胜 高晨阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_feb3458a84202d662fb86002",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-D组-24：何清越胜 赵皓月",
+      "source": "admin"
+    },
+    {
+      "id": "audit_d5387312055e6b726ed3183b",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-D组-23：何清越胜 胡若溪",
+      "source": "admin"
+    },
+    {
+      "id": "audit_732ed87f82e46432c4e773f6",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-C组-22：赵暖阳胜 周俊逸",
+      "source": "admin"
+    },
+    {
+      "id": "audit_f7b4fc718db774819e233de1",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-C组-21：吴云帆胜 周俊逸",
+      "source": "admin"
+    },
+    {
+      "id": "audit_5e1dbd596820cfbd122ce1bb",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-C组-20：吴云帆胜 赵暖阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_23f4cd673b0c22c9509d0f47",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-C组-19：李沐晴胜 周俊逸",
+      "source": "admin"
+    },
+    {
+      "id": "audit_53f7c68317da0249e825b90d",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-C组-18：李沐晴胜 赵暖阳",
+      "source": "admin"
+    },
+    {
+      "id": "audit_c405680a2d7409a331fba1c0",
+      "at": "2026-11-16T09:43:02.850Z",
+      "action": "确认比赛结果",
+      "detail": "NM-C组-17：李沐晴胜 吴云帆",
+      "source": "admin"
+    },
+    {
+      "id": "audit_26d2e58780c2ab9fd6c4b46f",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-B组-16：张雨桐胜 杨清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_1b537a2d596dc196176783d1",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-B组-15：周嘉宁胜 杨清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_8c37abcc4fb206367fdb4eba",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-B组-14：周嘉宁胜 张雨桐",
+      "source": "admin"
+    },
+    {
+      "id": "audit_f34031dde777100dabac91c6",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-B组-13：孙睿泽胜 杨清和",
+      "source": "admin"
+    },
+    {
+      "id": "audit_1bf3fd935cf6c4711bc847f5",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-B组-12：孙睿泽胜 张雨桐",
+      "source": "admin"
+    },
+    {
+      "id": "audit_e8c57dc2c2076ed39222a456",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-B组-11：孙睿泽胜 周嘉宁",
+      "source": "admin"
+    },
+    {
+      "id": "audit_4c2a2ad680793bc1317c1026",
+      "at": "2026-11-16T09:43:02.849Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-10：孙书航胜 杨思远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_a2c643f422d2c1d650b5aae9",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-09：李云舒胜 杨思远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_d13133c7403998c5898d5eb9",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-08：李云舒胜 孙书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_ec71c5e802342cc67359e3be",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-07：徐弘文胜 杨思远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_087abd624c775272340b19da",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-06：徐弘文胜 孙书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_03ed51498df07a45f81f4365",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-05：徐弘文胜 李云舒",
+      "source": "admin"
+    },
+    {
+      "id": "audit_81f4ddef59febe15356f3c2c",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-04：黄晨阳胜 杨思远",
+      "source": "admin"
+    },
+    {
+      "id": "audit_64bda5907e905f34266386b4",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-03：黄晨阳胜 孙书航",
+      "source": "admin"
+    },
+    {
+      "id": "audit_8665af2c71256b06a4c16719",
+      "at": "2026-11-16T09:43:02.848Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-02：黄晨阳胜 李云舒",
+      "source": "admin"
+    },
+    {
+      "id": "audit_8fc69f78b1f156c6632ebbd9",
+      "at": "2026-11-16T09:43:02.847Z",
+      "action": "确认比赛结果",
+      "detail": "NM-A组-01：黄晨阳胜 徐弘文",
+      "source": "admin"
+    },
+    {
+      "id": "audit_2fbb5a97b1553053d99cf715",
+      "at": "2026-11-16T09:43:02.847Z",
+      "action": "确认抽签并生成赛程",
+      "detail": "进阶女子抽签已锁定，生成24场对应比赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_6a42a09cb9ba3b49cb0e4ca8",
+      "at": "2026-11-16T09:43:02.847Z",
+      "action": "生成进阶组签表预览",
+      "detail": "进阶女子：8名种子分别进入8个16强位置，16人随机生成资格赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_1025eeb6ddc13afde29e62f7",
+      "at": "2026-11-16T09:43:02.847Z",
+      "action": "确认抽签并生成赛程",
+      "detail": "进阶男子抽签已锁定，生成24场对应比赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_9632403fd5a16534bc207255",
+      "at": "2026-11-16T09:43:02.846Z",
+      "action": "生成进阶组签表预览",
+      "detail": "进阶男子：8名种子分别进入8个16强位置，16人随机生成资格赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_122f65a79bd7f24ab083b009",
+      "at": "2026-11-16T09:43:02.846Z",
+      "action": "确认抽签并生成赛程",
+      "detail": "新手女子抽签已锁定，生成36场对应比赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_7f7737fe07fcc668781275a1",
+      "at": "2026-11-16T09:43:02.846Z",
+      "action": "生成小组抽签预览",
+      "detail": "新手女子按 5 / 5 / 5 / 4 人随机分组，尚未锁定。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_84af44fb36270d7101eb6e02",
+      "at": "2026-11-16T09:43:02.846Z",
+      "action": "确认抽签并生成赛程",
+      "detail": "新手男子抽签已锁定，生成28场对应比赛。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_48a350bddc5c11d1035c42dc",
+      "at": "2026-11-16T09:43:02.845Z",
+      "action": "生成小组抽签预览",
+      "detail": "新手男子按 5 / 4 / 4 / 4 人随机分组，尚未锁定。",
+      "source": "admin"
+    },
+    {
+      "id": "audit_b376b7adf200ca3859b3537a",
+      "at": "2026-11-16T09:43:02.845Z",
+      "action": "初始化模拟数据",
+      "detail": "导入84名模拟参赛者；四个组别人数为17、19、24、24。",
+      "source": "admin"
+    }
+  ],
+  "revisions": []
+}
