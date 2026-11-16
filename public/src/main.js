@@ -232,7 +232,7 @@ function schedulePoll() {
   clearTimeout(pollTimer);
   if (transport !== "poll") return;
   pollTimer = setTimeout(async () => {
-    if (!saving && !refreshInFlight) await refreshState();
+    if (!document.hidden && !saving && !refreshInFlight) await refreshState();
     schedulePoll();
   }, pollIntervalMs);
 }
@@ -1214,6 +1214,10 @@ window.addEventListener("online", () => {
 window.addEventListener("offline", () => {
   network = "offline";
   renderAll();
+});
+
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden && transport === "poll") refreshState();
 });
 
 document.addEventListener("fullscreenchange", () => {

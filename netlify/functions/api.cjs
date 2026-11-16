@@ -161,7 +161,7 @@ exports.handler = async (event) => {
         role: admin ? "admin" : "viewer",
         adminPath: admin ? `/admin/${process.env.ADMIN_TOKEN}` : null,
         transport: "poll",
-        pollIntervalMs: 5000
+        pollIntervalMs: 10000
       });
     }
 

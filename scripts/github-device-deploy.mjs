@@ -15,6 +15,9 @@ async function collectFiles(directory, relative = "") {
     if (
       entry.name === ".git" ||
       entry.name === "node_modules" ||
+      entry.name === ".agents" ||
+      entry.name === ".codex" ||
+      entry.name === ".netlify" ||
       relativePath.startsWith("work/")
     ) {
       continue;

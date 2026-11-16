@@ -218,7 +218,7 @@ async function handleApi(request, env, url) {
       role: admin ? "admin" : "viewer",
       adminPath: admin ? `/admin/${env.ADMIN_TOKEN}` : null,
       transport: "poll",
-      pollIntervalMs: 5000
+      pollIntervalMs: 10000
     });
   }
 
