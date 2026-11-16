@@ -277,5 +277,4 @@ await requestJson(`https://api.github.com/repos/${user.body.login}/${repoName}`,
 });
 
 console.log("GITHUB_REPO_URL=" + repository.html_url);
-console.log("RENDER_BLUEPRINT_URL=" + `https://dashboard.render.com/blueprint/new?repo=${encodeURIComponent(repository.html_url)}`);
 console.log("GitHub 源码仓库已创建并推送完成。");
