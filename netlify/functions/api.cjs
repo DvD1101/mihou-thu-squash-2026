@@ -105,8 +105,7 @@ function validateState(candidate) {
 
 async function getStoreClient() {
   return getStore({
-    name: "mihou-event-v1",
-    consistency: "strong"
+    name: "mihou-event-v1"
   });
 }
 
