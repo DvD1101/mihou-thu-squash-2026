@@ -15,6 +15,8 @@ import {
 } from "./model.js";
 import {
   EngineError,
+  batchDeletePlayers,
+  batchSetSeeds,
   calculateTeamStandings,
   canCreateNewbieKnockout,
   clearMatchesForGroup,
@@ -98,6 +100,29 @@ function renderAll() {
   if (modal) {
     const focusTarget = modalRoot.querySelector("input:not([type=hidden]), select, textarea, button");
     setTimeout(() => focusTarget?.focus({ preventScroll: true }), 0);
+  }
+  updateBulkSelectionUi();
+}
+
+function getSelectedPlayerIds() {
+  return [...document.querySelectorAll("input[data-bulk-player]:checked")].map(
+    (input) => input.dataset.bulkPlayer
+  );
+}
+
+function updateBulkSelectionUi() {
+  const checkboxes = [...document.querySelectorAll("input[data-bulk-player]")];
+  const selectAll = document.querySelector("input[data-bulk-select-all]");
+  if (!selectAll) return;
+  const selectedCount = checkboxes.filter((input) => input.checked).length;
+  const countLabel = document.querySelector("[data-bulk-count]");
+  if (countLabel) countLabel.textContent = `已选择 ${selectedCount} 人`;
+  selectAll.checked = checkboxes.length > 0 && selectedCount === checkboxes.length;
+  selectAll.indeterminate = selectedCount > 0 && selectedCount < checkboxes.length;
+  for (const button of document.querySelectorAll(
+    '[data-action="batch-seed"], [data-action="batch-delete"]'
+  )) {
+    button.disabled = selectedCount === 0;
   }
 }
 
@@ -915,6 +940,45 @@ function handleAction(actionElement, event) {
     renderAll();
     return true;
   }
+  if (action === "batch-seed") {
+    const playerIds = getSelectedPlayerIds();
+    const seed = actionElement.dataset.mode === "set";
+    commit(
+      (draft) => batchSetSeeds(draft, selectedGroup, playerIds, seed),
+      {
+        success: seed
+          ? `已将 ${playerIds.length} 名选手设为种子`
+          : `已取消 ${playerIds.length} 名选手的种子标记`
+      }
+    );
+    return true;
+  }
+  if (action === "batch-delete") {
+    const playerIds = getSelectedPlayerIds();
+    if (!playerIds.length) return true;
+    const selectedNames = state.players
+      .filter((player) => playerIds.includes(player.id))
+      .map((player) => player.name);
+    showGenericConfirm(
+      {
+        title: "批量删除选手",
+        heading: `将删除 ${playerIds.length} 名选手`,
+        message: "删除后名单数量和后续抽签条件可能变化。已经进入签表的选手会被系统阻止，不会静默删除。",
+        list: [
+          `所选选手：${selectedNames.slice(0, 12).join("、")}${selectedNames.length > 12 ? "…" : ""}`,
+          "如需恢复，只能使用上一版数据或 JSON 备份"
+        ],
+        confirmLabel: "确认批量删除",
+        tone: "danger"
+      },
+      () =>
+        commit(
+          (draft) => batchDeletePlayers(draft, playerIds),
+          { success: `已删除 ${playerIds.length} 名选手` }
+        )
+    );
+    return true;
+  }
   if (action === "match-schedule") {
     modal = { type: "match-schedule", data: { matchId: actionElement.dataset.match } };
     renderAll();
@@ -1181,6 +1245,22 @@ document.addEventListener("change", (event) => {
     const file = event.target.files?.[0];
     event.target.value = "";
     if (file) processBackupFile(file);
+  }
+  if (event.target.matches("input[data-bulk-select-all]")) {
+    for (const checkbox of document.querySelectorAll("input[data-bulk-player]")) {
+      checkbox.checked = event.target.checked;
+    }
+    updateBulkSelectionUi();
+  }
+  if (event.target.matches("input[data-bulk-player]")) {
+    const selectAll = document.querySelector("input[data-bulk-select-all]");
+    const checkboxes = [...document.querySelectorAll("input[data-bulk-player]")];
+    if (selectAll) {
+      const selectedCount = checkboxes.filter((input) => input.checked).length;
+      selectAll.checked = checkboxes.length > 0 && selectedCount === checkboxes.length;
+      selectAll.indeterminate = selectedCount > 0 && selectedCount < checkboxes.length;
+    }
+    updateBulkSelectionUi();
   }
 });
 

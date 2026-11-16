@@ -7,6 +7,8 @@ import {
 } from "../public/src/model.js";
 import {
   EngineError,
+  batchDeletePlayers,
+  batchSetSeeds,
   calculateTeamStandings,
   canCreateNewbieKnockout,
   confirmDraw,
@@ -283,4 +285,52 @@ test("自动排场满足4片场地、午间禁排和依赖顺序", () => {
       }
     }
   }
+});
+
+test("批量种子遵守8人上限和每种单位1人规则", () => {
+  const state = createDemoState();
+  const players = state.players.filter((player) => player.group === "advanced_men");
+  const currentSeeds = players.filter((player) => player.seed);
+  batchSetSeeds(
+    state,
+    "advanced_men",
+    currentSeeds.map((player) => player.id),
+    false
+  );
+  assert.equal(state.players.filter((player) => player.group === "advanced_men" && player.seed).length, 0);
+
+  const onePerUnit = state.units.map((unit) =>
+    players.find((player) => player.unitId === unit.id)
+  );
+  batchSetSeeds(
+    state,
+    "advanced_men",
+    onePerUnit.map((player) => player.id),
+    true
+  );
+  assert.equal(state.players.filter((player) => player.group === "advanced_men" && player.seed).length, 8);
+  assert.equal(new Set(onePerUnit.map((player) => player.unitId)).size, 8);
+
+  const sameUnit = players.filter((player) => player.unitId === onePerUnit[0].unitId);
+  assert.throws(
+    () => batchSetSeeds(state, "advanced_men", sameUnit.map((player) => player.id), true),
+    /每个参赛单位只能选择一名选手/
+  );
+});
+
+test("批量删除阻止删除已进入签表的选手并重置未锁定预览", () => {
+  const state = createDemoState();
+  generateGroupDraw(state, "new_men", deterministicRandomFactory());
+  const previewPlayers = state.players.filter((player) => player.group === "new_men").slice(0, 2);
+  const removed = batchDeletePlayers(state, previewPlayers.map((player) => player.id));
+  assert.equal(removed, 2);
+  assert.equal(state.draws.new_men.status, "empty");
+
+  generateGroupDraw(state, "new_men", deterministicRandomFactory());
+  confirmDraw(state, "new_men");
+  const drawnPlayer = state.players.find((player) => player.group === "new_men");
+  assert.throws(
+    () => batchDeletePlayers(state, [drawnPlayer.id]),
+    /已经进入比赛签表/
+  );
 });

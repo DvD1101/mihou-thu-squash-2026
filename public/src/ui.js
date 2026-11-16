@@ -1098,6 +1098,23 @@ function renderPlayersPage({ state, role, selectedGroup }) {
         ${actionButton("导出四组名单", "export-all-rosters", { size: "small" })}
       </div>
     </div>
+    ${
+      players.length
+        ? `<div class="bulk-toolbar" data-bulk-toolbar>
+            <label class="check-row"><input type="checkbox" data-bulk-select-all /> 全选本组</label>
+            <strong class="bulk-count" data-bulk-count>已选择 0 人</strong>
+            <div class="inline-actions">
+              ${
+                group.level === "advanced"
+                  ? `${actionButton("批量设为种子", "batch-seed", { data: 'data-mode="set"', size: "small", disabled: true })}
+                     ${actionButton("批量取消种子", "batch-seed", { data: 'data-mode="unset"', size: "small", disabled: true })}`
+                  : ""
+              }
+              ${actionButton("批量删除", "batch-delete", { size: "small", style: "danger", disabled: true })}
+            </div>
+          </div>`
+        : ""
+    }
     <section class="card">
       <div class="card-header">
         <div>
@@ -1109,7 +1126,7 @@ function renderPlayersPage({ state, role, selectedGroup }) {
       ${
         players.length
           ? `<div class="table-wrap"><table class="data-table">
-              <thead><tr><th>选手姓名</th><th>院系</th><th>联合参赛单位</th><th>身份</th>${group.level === "advanced" ? "<th>种子</th>" : ""}<th>当前成绩</th><th>操作</th></tr></thead>
+              <thead><tr><th class="select-cell"></th><th>选手姓名</th><th>院系</th><th>联合参赛单位</th><th>身份</th>${group.level === "advanced" ? "<th>种子</th>" : ""}<th>当前成绩</th><th>操作</th></tr></thead>
               <tbody>${players.map((player) => renderPlayerRow(state, player, group)).join("")}</tbody>
             </table></div>`
           : renderEmpty("该组暂无选手", "通过Excel导入，或点击新增选手。")
@@ -1129,6 +1146,7 @@ function pageHeaderBadgeForRoster(group, players) {
 function renderPlayerRow(state, player, group) {
   const placement = getPlacements(state, group.key).get(player.id);
   return `<tr>
+    <td class="select-cell"><input type="checkbox" data-bulk-player="${player.id}" aria-label="选择 ${escapeHtml(player.name)}" /></td>
     <td class="name">${escapeHtml(player.name)}</td>
     <td>${escapeHtml(player.department)}</td>
     <td>${player.unitId ? escapeHtml(playerUnitName(state, player.id)) : '<span class="badge neutral">外院系</span>'}</td>

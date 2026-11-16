@@ -828,6 +828,91 @@ export function getPlayerPlacement(state, playerId) {
   return getPlacements(state, player.group).get(playerId) ?? null;
 }
 
+export function batchSetSeeds(state, groupKey, playerIds, seed) {
+  const group = GROUP_BY_KEY[groupKey];
+  if (!group || group.level !== "advanced") {
+    throw new EngineError("只有进阶组可以设置种子。");
+  }
+  const uniqueIds = [...new Set(playerIds)];
+  if (!uniqueIds.length) throw new EngineError("请至少选择一名选手。");
+  const selected = uniqueIds.map((id) => {
+    const player = state.players.find((entry) => entry.id === id);
+    if (!player || player.group !== groupKey) {
+      throw new EngineError("所选名单中包含不属于当前组别的选手。");
+    }
+    return player;
+  });
+  if (state.draws[groupKey]?.status !== "empty" || state.matches.some((match) => match.group === groupKey)) {
+    throw new EngineError("该组已有抽签预览或签表，不能批量修改种子。请先重新抽签。");
+  }
+
+  if (seed) {
+    if (selected.some((player) => !player.unitId)) {
+      throw new EngineError("外院系或未匹配参赛单位的选手不能设为种子。");
+    }
+    const selectedUnits = selected.map((player) => player.unitId);
+    if (new Set(selectedUnits).size !== selectedUnits.length) {
+      throw new EngineError("批量种子里每个参赛单位只能选择一名选手。");
+    }
+    const existingSeeds = state.players.filter(
+      (player) => player.group === groupKey && player.seed && !uniqueIds.includes(player.id)
+    );
+    const combinedUnits = [...existingSeeds.map((player) => player.unitId), ...selectedUnits];
+    if (new Set(combinedUnits).size !== combinedUnits.length) {
+      throw new EngineError("所选选手与已有种子来自同一个参赛单位。");
+    }
+    if (existingSeeds.length + selected.length > 8) {
+      throw new EngineError(`该组种子不能超过8名；当前已有${existingSeeds.length}名。`);
+    }
+  }
+
+  for (const player of selected) player.seed = Boolean(seed);
+  addAudit(
+    state,
+    seed ? "批量设为种子" : "批量取消种子",
+    `${group.name}：${selected.map((player) => player.name).join("、")}`
+  );
+  return selected.length;
+}
+
+export function batchDeletePlayers(state, playerIds) {
+  const uniqueIds = [...new Set(playerIds)];
+  if (!uniqueIds.length) throw new EngineError("请至少选择一名选手。");
+  const selected = uniqueIds.map((id) => {
+    const player = state.players.find((entry) => entry.id === id);
+    if (!player) throw new EngineError("所选名单中包含不存在的选手，请刷新页面。");
+    return player;
+  });
+  const involvedInMatches = state.matches.some((match) =>
+    getMatchPlayers(state, match).some((player) => player && uniqueIds.includes(player.id))
+  );
+  if (involvedInMatches) {
+    throw new EngineError("所选选手已经进入比赛签表，不能直接批量删除。请先重新抽签。");
+  }
+  const lockedGroups = [...new Set(selected.map((player) => player.group))].filter(
+    (groupKey) => state.draws[groupKey]?.status === "locked"
+  );
+  if (lockedGroups.length) {
+    throw new EngineError("所选选手所在组别已锁定抽签，不能直接批量删除。请先重新抽签。");
+  }
+
+  for (const groupKey of new Set(selected.map((player) => player.group))) {
+    if (state.draws[groupKey]?.status === "preview") {
+      state.draws[groupKey] = { status: "empty", groups: [], knockoutCreated: false };
+    }
+    for (const key of Object.keys(state.groupResolutions)) {
+      if (key.startsWith(`${groupKey}:`)) delete state.groupResolutions[key];
+    }
+  }
+  state.players = state.players.filter((player) => !uniqueIds.includes(player.id));
+  addAudit(
+    state,
+    "批量删除选手",
+    `共删除${selected.length}人：${selected.map((player) => player.name).join("、")}`
+  );
+  return selected.length;
+}
+
 export function placementLabel(place) {
   if (!place) return "未产生";
   if (place === 1) return "冠军";
