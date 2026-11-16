@@ -1,4 +1,4 @@
-const { getStore } = require("@netlify/blobs");
+const { getStore, connectLambda } = require("@netlify/blobs");
 
 const units = [
   { id: "u_cs", name: "计算机系", aliases: ["计算机系", "计算机科学与技术系"], active: true },
@@ -128,6 +128,7 @@ async function getCurrent(store) {
 
 exports.handler = async (event) => {
   try {
+    connectLambda(event);
     const url = new URL(event.rawUrl);
     const path = url.pathname;
     const queryToken = url.searchParams.get("token") ?? "";
