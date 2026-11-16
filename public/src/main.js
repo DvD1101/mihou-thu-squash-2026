@@ -864,11 +864,10 @@ function handleAction(actionElement, event) {
     return true;
   }
   if (action === "modal-backdrop") {
-    if (event.target === actionElement) {
-      modal = null;
-      pendingConfirm = null;
-      renderAll();
-    }
+    if (event.target !== actionElement) return false;
+    modal = null;
+    pendingConfirm = null;
+    renderAll();
     return true;
   }
   if (action === "winner") {

@@ -120,6 +120,15 @@ try {
   assert.match(await admin.locator(".modal").innerText(), /新手男子/);
   await admin.locator(".modal-close").click();
 
+  await admin.getByRole("button", { name: "进阶男子" }).last().click();
+  await admin.locator('[data-action="player-edit"]').first().click();
+  await admin.locator(".modal").waitFor();
+  const seedCheckbox = admin.locator('input[name="seed"]');
+  const seedBefore = await seedCheckbox.isChecked();
+  await seedCheckbox.click();
+  assert.notEqual(await seedCheckbox.isChecked(), seedBefore, "种子复选框必须能够切换");
+  await admin.locator(".modal-close").click();
+
   await admin.screenshot({
     path: path.join(root, "work", "browser-admin-bracket.png"),
     fullPage: false
