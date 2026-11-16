@@ -59,13 +59,14 @@ function createInitialState() {
   };
 }
 
-function json(body, statusCode = 200) {
+function json(body, statusCode = 200, extraHeaders = {}) {
   return {
     statusCode,
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store",
-      "X-Content-Type-Options": "nosniff"
+      "X-Content-Type-Options": "nosniff",
+      ...extraHeaders
     },
     body: JSON.stringify(body)
   };
@@ -151,6 +152,8 @@ exports.handler = async (event) => {
         version: current.data.meta.version,
         players: current.data.players.length,
         matches: current.data.matches.length
+      }, 200, {
+        "Netlify-CDN-Cache-Control": "public, durable, max-age=2, stale-while-revalidate=8"
       });
     }
 
@@ -162,7 +165,11 @@ exports.handler = async (event) => {
         adminPath: admin ? `/admin/${process.env.ADMIN_TOKEN}` : null,
         transport: "poll",
         pollIntervalMs: 10000
-      });
+      }, 200, admin
+        ? {}
+        : {
+            "Netlify-CDN-Cache-Control": "public, durable, max-age=1, stale-while-revalidate=8"
+          });
     }
 
     if (path === "/api/previous" && event.httpMethod === "GET") {
