@@ -1,6 +1,4 @@
-import { getStore } from "@netlify/blobs";
-
-const store = getStore({ name: "mihou-event-v1", consistency: "strong" });
+const { getStore } = require("@netlify/blobs");
 
 const units = [
   { id: "u_cs", name: "计算机系", aliases: ["计算机系", "计算机科学与技术系"], active: true },
@@ -61,14 +59,16 @@ function createInitialState() {
   };
 }
 
-function json(body, status = 200) {
-  return Response.json(body, {
-    status,
+function json(body, statusCode = 200) {
+  return {
+    statusCode,
     headers: {
+      "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store",
       "X-Content-Type-Options": "nosniff"
-    }
-  });
+    },
+    body: JSON.stringify(body)
+  };
 }
 
 function timingSafeEqualText(left, right) {
@@ -103,7 +103,14 @@ function validateState(candidate) {
   }
 }
 
-async function getCurrent() {
+async function getStoreClient() {
+  return getStore({
+    name: "mihou-event-v1",
+    consistency: "strong"
+  });
+}
+
+async function getCurrent(store) {
   const entry = await store.getWithMetadata("event", { type: "json" });
   if (entry) return entry;
   const initial = createInitialState();
@@ -119,32 +126,25 @@ async function getCurrent() {
   };
 }
 
-function responsePayload(entry, admin, adminToken) {
-  return {
-    state: entry.data,
-    role: admin ? "admin" : "viewer",
-    adminPath: admin ? `/admin/${adminToken}` : null,
-    transport: "poll",
-    pollIntervalMs: 5000
-  };
-}
-
-export default async (request) => {
+exports.handler = async (event) => {
   try {
-    const url = new URL(request.url);
-    const path = url.pathname.replace(/^.*\/api/, "/api");
+    const url = new URL(event.rawUrl);
+    const path = url.pathname;
     const queryToken = url.searchParams.get("token") ?? "";
-    const bearer = request.headers.get("Authorization")?.startsWith("Bearer ")
-      ? request.headers.get("Authorization").slice(7)
-      : "";
+    const headerValue =
+      event.headers.authorization ||
+      event.headers.Authorization ||
+      "";
+    const bearer = headerValue.startsWith("Bearer ") ? headerValue.slice(7) : "";
     const suppliedToken = queryToken || bearer;
     if (suppliedToken && !timingSafeEqualText(suppliedToken, process.env.ADMIN_TOKEN)) {
       return json({ error: "管理员链接无效。" }, 403);
     }
     const admin = Boolean(suppliedToken);
+    const store = await getStoreClient();
 
     if (path === "/api/health") {
-      const current = await getCurrent();
+      const current = await getCurrent(store);
       return json({
         ok: true,
         platform: "netlify",
@@ -154,25 +154,33 @@ export default async (request) => {
       });
     }
 
-    if (path === "/api/state" && request.method === "GET") {
-      const current = await getCurrent();
-      return json(responsePayload(current, admin, process.env.ADMIN_TOKEN));
+    if (path === "/api/state" && event.httpMethod === "GET") {
+      const current = await getCurrent(store);
+      return json({
+        state: current.data,
+        role: admin ? "admin" : "viewer",
+        adminPath: admin ? `/admin/${process.env.ADMIN_TOKEN}` : null,
+        transport: "poll",
+        pollIntervalMs: 5000
+      });
     }
 
-    if (path === "/api/previous" && request.method === "GET") {
+    if (path === "/api/previous" && event.httpMethod === "GET") {
       if (!admin) return json({ error: "需要管理员权限。" }, 403);
       const previous = await store.get("previous", { type: "json" });
       if (!previous) return json({ error: "尚无可恢复的上一版数据。" }, 404);
       return json({ state: previous });
     }
 
-    if (path === "/api/state" && request.method === "POST") {
+    if (path === "/api/state" && event.httpMethod === "POST") {
       if (!admin) return json({ error: "没有编辑权限。观众链接只能查看。" }, 403);
-      const text = await request.text();
+      const text = event.isBase64Encoded
+        ? Buffer.from(event.body || "", "base64").toString("utf8")
+        : event.body || "";
       if (text.length > 20 * 1024 * 1024) return json({ error: "请求内容超过20MB。" }, 413);
       const body = JSON.parse(text);
       validateState(body.state);
-      const current = await getCurrent();
+      const current = await getCurrent(store);
       if (Number(body.expectedVersion) !== Number(current.data.meta.version)) {
         return json(
           {
@@ -201,17 +209,9 @@ export default async (request) => {
       return json({ ok: true, state: next, version: next.meta.version });
     }
 
-    if (path === "/api/events") {
-      return json({ error: "当前免费部署使用自动轮询。" }, 410);
-    }
-
     return json({ error: "接口不存在。" }, 404);
   } catch (error) {
     console.error(error);
     return json({ error: error?.message || "服务器内部错误。" }, 500);
   }
-};
-
-export const config = {
-  path: "/api/*"
 };
