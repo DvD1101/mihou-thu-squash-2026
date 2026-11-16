@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-- 已免费部署到 Netlify，观众地址：https://mihou-squash-live-2026.netlify.app/view
+- 已免费部署到 Netlify，观众地址：https://mihoo-squash-2026.netlify.app/view
 - 管理员地址为私密链接，不写入公开源码仓库。
 - 云端数据保存在 Netlify Blobs，观众页面约每 10 秒自动同步。
 - 本机 Node 版本仍可在无网络环境中运行并输出本地链接。

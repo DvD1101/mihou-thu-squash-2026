@@ -9,7 +9,7 @@ const { chromium } = require(
   "C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1112-737-0_26.1112.737.0_x64__3k8sg7r9htsxt/dependencies/node/node_modules/playwright"
 );
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const baseUrl = "https://mihou-squash-live-2026.netlify.app";
+const baseUrl = "https://mihoo-squash-2026.netlify.app";
 const adminToken = (await fs.readFile(path.join(root, "work", ".netlify-admin-token"), "utf8")).trim();
 const adminUrl = `${baseUrl}/admin/${adminToken}`;
 const edgePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
