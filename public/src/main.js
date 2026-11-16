@@ -77,6 +77,9 @@ let saving = false;
 let modal = null;
 let pendingConfirm = null;
 let eventSource = null;
+let transport = "sse";
+let pollIntervalMs = 5000;
+let pollTimer = null;
 let toastTimer = null;
 let refreshInFlight = false;
 
@@ -159,6 +162,8 @@ async function loadState({ initial = false } = {}) {
     state = body.state;
     role = body.role;
     adminPath = body.adminPath;
+    transport = body.transport ?? "sse";
+    pollIntervalMs = Number(body.pollIntervalMs) || 5000;
     network = "online";
     if (!["dashboard", "draw", "groups", "bracket", "schedule", "teams", "players", "settings"].includes(view)) {
       view = "dashboard";
@@ -193,7 +198,17 @@ function escapeClient(value) {
 }
 
 function connectEvents() {
-  if (eventSource || typeof EventSource === "undefined") return;
+  if (eventSource) {
+    eventSource.close();
+    eventSource = null;
+  }
+  clearTimeout(pollTimer);
+  pollTimer = null;
+  if (transport === "poll") {
+    schedulePoll();
+    return;
+  }
+  if (typeof EventSource === "undefined") return;
   eventSource = new EventSource("/api/events");
   eventSource.addEventListener("revision", async (event) => {
     const data = JSON.parse(event.data);
@@ -213,6 +228,15 @@ function connectEvents() {
   };
 }
 
+function schedulePoll() {
+  clearTimeout(pollTimer);
+  if (transport !== "poll") return;
+  pollTimer = setTimeout(async () => {
+    if (!saving && !refreshInFlight) await refreshState();
+    schedulePoll();
+  }, pollIntervalMs);
+}
+
 async function refreshState() {
   if (refreshInFlight || !navigator.onLine) return;
   refreshInFlight = true;
@@ -221,10 +245,14 @@ async function refreshState() {
     const response = await fetch(`/api/state${query}`, { cache: "no-store" });
     const body = await response.json();
     if (!response.ok) throw new Error(body.error || "同步失败。");
+    const changed =
+      body.state.meta.version !== state.meta.version ||
+      body.role !== role ||
+      network !== "online";
     state = body.state;
     role = body.role;
     network = "online";
-    renderAll();
+    if (changed) renderAll();
   } catch {
     network = "offline";
     renderAll();

@@ -4,10 +4,15 @@
   "private": true,
   "type": "module",
   "description": "清华大学九系壁球俱乐部联赛赛程管理系统",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.9"
+  },
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "cloudflare:dev": "wrangler dev",
+    "cloudflare:deploy": "wrangler deploy"
   },
   "engines": {
     "node": ">=22"
