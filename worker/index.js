@@ -92,6 +92,9 @@ function serveStatic(request, url, env) {
   if (pathname === "/" || pathname === "/view" || pathname.startsWith("/admin/")) {
     pathname = "/index.html";
   }
+  const looksLikeAsset =
+    /\.[a-z0-9]+$/i.test(pathname) || pathname.startsWith("/src/");
+  if (!embedded[pathname] && !looksLikeAsset) pathname = "/index.html";
   let asset = embedded[pathname];
   if (!asset) {
     return new Response("Not found", {
