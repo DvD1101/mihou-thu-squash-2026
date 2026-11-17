@@ -110,8 +110,12 @@ async function getStoreClient() {
   });
 }
 
+async function readCurrent(store) {
+  return store.getWithMetadata("event", { type: "json" });
+}
+
 async function getCurrent(store) {
-  const entry = await store.getWithMetadata("event", { type: "json" });
+  const entry = await readCurrent(store);
   if (entry) return entry;
   const initial = createInitialState();
   const created = await store.setJSON("event", initial, { onlyIfNew: true });
@@ -124,6 +128,16 @@ async function getCurrent(store) {
     etag: created.etag,
     metadata: {}
   };
+}
+
+async function getCurrentForExpected(store, expectedVersion) {
+  let entry = await getCurrent(store);
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    if (Number(entry.data.meta.version) >= Number(expectedVersion)) return entry;
+    await new Promise((resolve) => setTimeout(resolve, 150 * (attempt + 1)));
+    entry = (await readCurrent(store)) ?? entry;
+  }
+  return entry;
 }
 
 exports.handler = async (event) => {
@@ -187,7 +201,7 @@ exports.handler = async (event) => {
       if (text.length > 20 * 1024 * 1024) return json({ error: "请求内容超过20MB。" }, 413);
       const body = JSON.parse(text);
       validateState(body.state);
-      const current = await getCurrent(store);
+      const current = await getCurrentForExpected(store, body.expectedVersion);
       if (Number(body.expectedVersion) !== Number(current.data.meta.version)) {
         return json(
           {
@@ -202,10 +216,12 @@ exports.handler = async (event) => {
       next.meta.updatedAt = new Date().toISOString();
       const saved = await store.setJSON("event", next, { onlyIfMatch: current.etag });
       if (!saved.modified) {
+        await new Promise((resolve) => setTimeout(resolve, 200));
+        const latest = (await readCurrent(store)) ?? current;
         return json(
           {
             error: "赛事数据已被另一窗口更新，请重新载入后再操作。",
-            currentVersion: current.data.meta.version
+            currentVersion: latest.data.meta.version
           },
           409
         );

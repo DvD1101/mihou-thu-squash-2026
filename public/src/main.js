@@ -286,6 +286,28 @@ async function refreshState() {
   }
 }
 
+const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+
+async function fetchAdminStateAtLeast(minimumVersion, attempts = 5) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      const response = await fetch(
+        `/api/state?token=${encodeURIComponent(routeToken)}&_sync=${Date.now()}`,
+        { cache: "no-store", headers: { "Cache-Control": "no-cache" } }
+      );
+      const body = await response.json();
+      if (!response.ok) throw new Error(body.error || "无法读取最新赛事数据。");
+      if (Number(body.state.meta.version) >= Number(minimumVersion)) return body.state;
+      lastError = new Error("云端数据仍在同步，请稍候。");
+    } catch (error) {
+      lastError = error;
+    }
+    await wait(250 * (attempt + 1));
+  }
+  throw lastError ?? new Error("云端数据同步超时，请稍后重试。");
+}
+
 async function commit(mutator, { closeModal = true, success = "已保存" } = {}) {
   if (role !== "admin") {
     toast("观众链接没有编辑权限。", "error");
@@ -299,7 +321,8 @@ async function commit(mutator, { closeModal = true, success = "已保存" } = {}
     toast("网络已中断，无法保存。请恢复网络后重新操作。", "error");
     return false;
   }
-  const draft = structuredClone(state);
+  let baseVersion = Number(state.meta.version);
+  let draft = structuredClone(state);
   let result;
   try {
     result = await mutator(draft);
@@ -310,31 +333,53 @@ async function commit(mutator, { closeModal = true, success = "已保存" } = {}
   saving = true;
   renderAll();
   try {
-    const response = await fetch("/api/state", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        ...authHeaders()
-      },
-      body: JSON.stringify({
-        expectedVersion: state.meta.version,
-        state: draft
-      })
-    });
-    const body = await response.json();
-    if (!response.ok) {
-      if (response.status === 409) {
-        await refreshState();
-        throw new Error("赛事数据已被另一窗口更新，请重新操作。页面已刷新为最新数据。");
+    let merged = false;
+    for (let attempt = 0; attempt < 4; attempt += 1) {
+      const response = await fetch("/api/state", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...authHeaders()
+        },
+        body: JSON.stringify({
+          expectedVersion: baseVersion,
+          state: draft
+        })
+      });
+      const body = await response.json();
+      if (response.ok) {
+        state = body.state;
+        role = "admin";
+        network = "online";
+        if (closeModal) modal = null;
+        toast(merged ? "数据已自动合并并保存" : success, "success");
+        return result ?? true;
       }
-      throw new Error(body.error || "服务器未确认保存。");
+      if (response.status !== 409) {
+        throw new Error(body.error || "服务器未确认保存。");
+      }
+
+      const serverVersion = Number(body.currentVersion);
+      if (!Number.isFinite(serverVersion) || serverVersion <= baseVersion) {
+        await wait(300 * (attempt + 1));
+        continue;
+      }
+
+      const latest = await fetchAdminStateAtLeast(serverVersion);
+      state = latest;
+      baseVersion = Number(latest.meta.version);
+      draft = structuredClone(latest);
+      try {
+        result = await mutator(draft);
+      } catch (error) {
+        handleEngineError(error);
+        return false;
+      }
+      merged = true;
+      renderAll();
     }
-    state = body.state;
-    role = "admin";
-    network = "online";
-    if (closeModal) modal = null;
-    toast(success, "success");
-    return result ?? true;
+    await refreshState();
+    throw new Error("云端数据连续冲突，页面已同步；请确认最新状态后再操作。");
   } catch (error) {
     network = navigator.onLine ? "online" : "offline";
     toast(`保存失败：${error.message}`, "error", 6500);
