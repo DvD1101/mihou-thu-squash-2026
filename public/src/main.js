@@ -57,9 +57,17 @@ import { renderApp, renderModal } from "./ui.js";
 const root = document.querySelector("#app");
 const modalRoot = document.querySelector("#modal-root");
 const toastRoot = document.querySelector("#toast-root");
-const routeParts = window.location.pathname.split("/").filter(Boolean);
+const appBasePath = new URL("../", import.meta.url).pathname.replace(/\/$/, "");
+const relativeLocationPath = (() => {
+  if (!appBasePath) return window.location.pathname;
+  return window.location.pathname.startsWith(appBasePath)
+    ? window.location.pathname.slice(appBasePath.length) || "/"
+    : window.location.pathname;
+})();
+const routeParts = relativeLocationPath.split("/").filter(Boolean);
 const routeRole = routeParts[0] === "admin" ? "admin" : "viewer";
 const routeToken = routeRole === "admin" ? decodeURIComponent(routeParts[1] ?? "") : "";
+const apiBase = `${appBasePath}/api`;
 
 let state;
 let role = routeRole;
@@ -181,7 +189,7 @@ async function loadState({ initial = false } = {}) {
   }
   try {
     const query = role === "admin" ? `?token=${encodeURIComponent(routeToken)}` : "";
-    const response = await fetch(`/api/state${query}`, { cache: "no-store" });
+    const response = await fetch(`${apiBase}/state${query}`, { cache: "no-store" });
     const body = await response.json();
     if (!response.ok) throw new Error(body.error || "无法载入赛事数据。");
     state = body.state;
@@ -234,7 +242,7 @@ function connectEvents() {
     return;
   }
   if (typeof EventSource === "undefined") return;
-  eventSource = new EventSource("/api/events");
+  eventSource = new EventSource(`${apiBase}/events`);
   eventSource.addEventListener("revision", async (event) => {
     const data = JSON.parse(event.data);
     network = "online";
@@ -267,7 +275,7 @@ async function refreshState() {
   refreshInFlight = true;
   try {
     const query = role === "admin" ? `?token=${encodeURIComponent(routeToken)}` : "";
-    const response = await fetch(`/api/state${query}`, { cache: "no-store" });
+    const response = await fetch(`${apiBase}/state${query}`, { cache: "no-store" });
     const body = await response.json();
     if (!response.ok) throw new Error(body.error || "同步失败。");
     const changed =
@@ -293,7 +301,7 @@ async function fetchAdminStateAtLeast(minimumVersion, attempts = 5) {
   for (let attempt = 0; attempt < attempts; attempt += 1) {
     try {
       const response = await fetch(
-        `/api/state?token=${encodeURIComponent(routeToken)}&_sync=${Date.now()}`,
+        `${apiBase}/state?token=${encodeURIComponent(routeToken)}&_sync=${Date.now()}`,
         { cache: "no-store", headers: { "Cache-Control": "no-cache" } }
       );
       const body = await response.json();
@@ -335,7 +343,7 @@ async function commit(mutator, { closeModal = true, success = "已保存" } = {}
   try {
     let merged = false;
     for (let attempt = 0; attempt < 4; attempt += 1) {
-      const response = await fetch("/api/state", {
+      const response = await fetch(`${apiBase}/state`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1234,7 +1242,7 @@ function handleAction(actionElement, event) {
       },
       async () => {
         try {
-          const response = await fetch("/api/previous", { headers: authHeaders(), cache: "no-store" });
+          const response = await fetch(`${apiBase}/previous`, { headers: authHeaders(), cache: "no-store" });
           const body = await response.json();
           if (!response.ok) throw new Error(body.error || "没有可恢复的快照。");
           await commit((draft) => {

@@ -71,7 +71,7 @@ function environment() {
 
 test("Cloudflare Worker 支持观众读取、管理员写入和权限拒绝", async () => {
   const env = environment();
-  const base = "https://example.workers.dev";
+  const base = "https://example.com/events/2026-thu-nine-school";
 
   const viewer = await worker.fetch(new Request(`${base}/api/state`), env);
   const viewerBody = await viewer.json();
@@ -95,7 +95,7 @@ test("Cloudflare Worker 支持观众读取、管理员写入和权限拒绝", as
   const admin = await worker.fetch(new Request(`${base}/api/state${adminQuery}`), env);
   const adminBody = await admin.json();
   assert.equal(adminBody.role, "admin");
-  assert.match(adminBody.adminPath, /^\/admin\//);
+  assert.match(adminBody.adminPath, /^\/events\/2026-thu-nine-school\/admin\//);
 
   const next = createDemoState();
   next.meta.version = 0;

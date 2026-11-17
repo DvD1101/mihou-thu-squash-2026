@@ -1,4 +1,5 @@
 let schemaReady = false;
+const EVENT_BASE = "/events/2026-thu-nine-school";
 
 const units = [
   { id: "u_cs", name: "计算机系", aliases: ["计算机系", "计算机科学与技术系"], active: true },
@@ -84,14 +85,14 @@ function serveStatic(request, url, env) {
   if (url.pathname === "/favicon.ico") {
     return new Response(null, { status: 204 });
   }
-  if (env.ASSETS) return env.ASSETS.fetch(request);
+  if (env.ASSETS) return env.ASSETS.fetch(new Request(url.toString(), request));
   const embedded = globalThis.__MIHOU_STATIC_ASSETS__;
   if (!embedded) return new Response("Static assets are not initialized.", { status: 503 });
   let pathname = url.pathname;
   if (pathname === "/" || pathname === "/view" || pathname.startsWith("/admin/")) {
     pathname = "/index.html";
   }
-  const asset = embedded[pathname];
+  let asset = embedded[pathname];
   if (!asset) {
     return new Response("Not found", {
       status: 404,
@@ -99,6 +100,12 @@ function serveStatic(request, url, env) {
     });
   }
   const extension = pathname.slice(pathname.lastIndexOf("."));
+  if (pathname === "/index.html") {
+    asset = asset
+      .replaceAll('href="/styles.css"', `href="${EVENT_BASE}/styles.css"`)
+      .replaceAll('href="/src/', `href="${EVENT_BASE}/src/`)
+      .replaceAll('src="/src/', `src="${EVENT_BASE}/src/`);
+  }
   return new Response(request.method === "HEAD" ? null : asset, {
     status: 200,
     headers: {
@@ -111,9 +118,41 @@ function serveStatic(request, url, env) {
       "Referrer-Policy": "no-referrer",
       "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
       "Content-Security-Policy":
-        "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+        "default-src 'self'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://cloudflareinsights.com; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
     }
   });
+}
+
+function renderLanding() {
+  return new Response(
+    `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiHoo Squash</title>
+  <style>
+    :root { color-scheme: light; font-family: "Microsoft YaHei", system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f4f3f6; color: #21152f; }
+    main { width: min(720px, calc(100% - 40px)); padding: 52px; border: 1px solid #dedce3; border-radius: 24px; background: white; box-shadow: 0 18px 60px rgba(33,21,47,.12); }
+    .mark { width: 64px; height: 64px; display: grid; place-items: center; border-radius: 20px; background: #472861; color: white; font: 700 20px Georgia, serif; }
+    h1 { margin: 24px 0 10px; font: 700 clamp(32px, 6vw, 54px)/1.15 "Songti SC", serif; }
+    p { color: #6d6b74; line-height: 1.8; }
+    a { display: inline-flex; margin-top: 20px; padding: 12px 18px; border-radius: 10px; background: #5b3f8c; color: white; text-decoration: none; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">MH</div>
+    <h1>MiHoo Squash</h1>
+    <p>MiHoo 官方网站正在建设中。</p>
+    <p>2026 清华大学九系壁球俱乐部联赛赛程系统已开放。</p>
+    <a href="${EVENT_BASE}/view">进入赛事页面</a>
+  </main>
+</body>
+</html>`,
+    { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-cache" } }
+  );
 }
 
 async function ensureSchema(env) {
@@ -216,9 +255,9 @@ async function handleApi(request, env, url) {
     return json({
       state: current.state,
       role: admin ? "admin" : "viewer",
-      adminPath: admin ? `/admin/${env.ADMIN_TOKEN}` : null,
+      adminPath: admin ? `${EVENT_BASE}/admin/${env.ADMIN_TOKEN}` : null,
       transport: "poll",
-      pollIntervalMs: 10000
+      pollIntervalMs: 20000
     });
   }
 
@@ -294,10 +333,28 @@ export default {
   async fetch(request, env) {
     try {
       const url = new URL(request.url);
-      if (url.pathname.startsWith("/api/")) {
-        return await handleApi(request, env, url);
+      const hostname = url.hostname;
+      if (hostname === "mihoosquash.com") {
+        const canonical = new URL(request.url);
+        canonical.hostname = `www.${hostname}`;
+        return Response.redirect(canonical.toString(), 308);
       }
-      return serveStatic(request, url, env);
+      if (url.pathname === "/view" || url.pathname.startsWith("/admin/")) {
+        return Response.redirect(`${url.origin}${EVENT_BASE}${url.pathname}${url.search}${url.hash}`, 308);
+      }
+      if (url.pathname === "/") return renderLanding();
+      if (url.pathname === EVENT_BASE) {
+        return Response.redirect(`${url.origin}${EVENT_BASE}/${url.search}`, 308);
+      }
+      if (!url.pathname.startsWith(`${EVENT_BASE}/`)) {
+        return new Response("Not found", { status: 404 });
+      }
+      const relativeUrl = new URL(request.url);
+      relativeUrl.pathname = url.pathname.slice(EVENT_BASE.length) || "/";
+      if (relativeUrl.pathname.startsWith("/api/")) {
+        return await handleApi(request, env, relativeUrl);
+      }
+      return serveStatic(request, relativeUrl, env);
     } catch (error) {
       console.error(error);
       return json({ error: error?.message || "服务器内部错误。" }, 500);

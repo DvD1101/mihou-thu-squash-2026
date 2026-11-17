@@ -5,8 +5,10 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const scriptName = "mihou-thu-squash-2026";
-const databaseName = "mihou_event_state";
+const scriptName = "mihoo-squash-2026";
+const databaseName = "mihoo_event_state";
+const zoneName = "mihoosquash.com";
+const eventBasePath = "/events/2026-thu-nine-school";
 const wrangler = path.join(root, "work", "tools", "cloudflare", "node_modules", "wrangler", "bin", "wrangler.js");
 const configHome = path.join(root, "work", "tools", "config");
 const tokenPath = path.join(root, "work", ".cloudflare-deploy-token");
@@ -153,6 +155,21 @@ try {
   });
 }
 const baseUrl = `https://${scriptName}.${subdomain.subdomain}.workers.dev`;
+const zones = await api(`/zones?name=${encodeURIComponent(zoneName)}`);
+const zone = zones.find((entry) => entry.name === zoneName && entry.status === "active");
+if (!zone) throw new Error(`Cloudflare Zone ${zoneName} 未激活，无法绑定自定义域名。`);
+for (const hostname of [zoneName, `www.${zoneName}`]) {
+  await api(`/accounts/${account.id}/workers/domains`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      environment: "production",
+      hostname,
+      service: scriptName,
+      zone_id: zone.id
+    })
+  });
+}
 
 console.log(
   JSON.stringify({
@@ -160,7 +177,7 @@ console.log(
     account: account.name,
     databaseId: database.uuid,
     baseUrl,
-    viewerUrl: `${baseUrl}/view`,
-    adminUrl: `${baseUrl}/admin/${adminToken}`
+    viewerUrl: `https://www.${zoneName}${eventBasePath}/view`,
+    adminUrl: `https://www.${zoneName}${eventBasePath}/admin/${adminToken}`
   })
 );

@@ -1245,7 +1245,7 @@ function renderSettingsPage({ state, role, adminPath }) {
         <section class="card">
           <div class="card-header"><div><h2 class="card-title">实时同步说明</h2><p class="card-subtitle">当前技术状态</p></div></div>
           <div class="card-body">
-            <div class="info-box"><div><strong>服务端数据 + 自动同步</strong>管理员保存成功后，观众页面会自动获取新版本；免费云部署使用约10秒轮询，Node部署支持即时SSE推送。私密令牌始终由服务端校验。</div></div>
+            <div class="info-box"><div><strong>服务端数据 + 自动同步</strong>管理员保存成功后，观众页面会自动获取新版本；免费云部署使用约10–20秒轮询，Node部署支持即时SSE推送。私密令牌始终由服务端校验。</div></div>
           </div>
         </section>
       </div>

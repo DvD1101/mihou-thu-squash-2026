@@ -4,9 +4,9 @@
 
 ## 当前状态
 
-- 已免费部署到 Netlify，观众地址：https://mihoo-squash-2026.netlify.app/view
+- 已部署到 Cloudflare Workers + D1，赛事地址：https://www.mihoosquash.com/events/2026-thu-nine-school/
 - 管理员地址为私密链接，不写入公开源码仓库。
-- 云端数据保存在 Netlify Blobs，观众页面约每 10 秒自动同步。
+- 云端数据保存在 Cloudflare D1，观众页面约每 20 秒自动同步。
 - 本机 Node 版本仍可在无网络环境中运行并输出本地链接。
 
 ## 快速启动
@@ -43,7 +43,7 @@ node server.mjs
 
 ## 数据与部署
 
-Netlify 生产版把赛事数据保存在服务端 Netlify Blobs 中，不是浏览器 `localStorage`。写入采用 ETag 条件更新以避免静默覆盖，并保留上一版快照。观众写入请求会被服务端直接拒绝。本机 Node 版仍使用 JSON 原子文件。
+Cloudflare 生产版把赛事数据保存在服务端 D1 中，不是浏览器 `localStorage`。写入采用版本条件更新以避免静默覆盖，并保留上一版快照。观众写入请求会被服务端直接拒绝。本机 Node 版仍使用 JSON 原子文件。
 
 详见：
 
@@ -62,6 +62,7 @@ node --test tests/*.test.mjs
 ## 技术结构
 
 - `netlify/functions/api.cjs`：免费云部署 API、Blobs 持久化、轮询同步。
+- `worker/index.js`：Cloudflare Worker 路由、静态页面与 D1 API。
 - `server.mjs`：本机运行版，静态文件、管理员令牌、原子存储、SSE 推送。
 - `public/src/model.js`：赛事数据结构、选手与院系模型。
 - `public/src/engine.js`：抽签、排名、签表、晋级、积分和纠错。
