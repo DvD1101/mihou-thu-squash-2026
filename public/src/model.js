@@ -444,10 +444,6 @@ export function validateRoster(state) {
       if (players.length !== 24 || seeds.length !== 8) {
         warnings.push(`${group.name}需要 24 人和 8 名种子才能生成标准签表（当前 ${players.length} 人 / ${seeds.length} 种）。`);
       }
-      const seedUnits = seeds.map((player) => player.unitId).filter(Boolean);
-      if (new Set(seedUnits).size !== seedUnits.length) {
-        errors.push(`${group.name}的种子选手来自重复参赛单位。`);
-      }
     }
   }
 

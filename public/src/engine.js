@@ -162,10 +162,6 @@ export function validateAdvancedSeeds(state, groupKey) {
   if (seeds.length !== 8) {
     throw new EngineError(`${group.name}必须指定8名种子，当前为${seeds.length}名。`);
   }
-  const seedUnitIds = seeds.map((player) => player.unitId).filter(Boolean);
-  if (seedUnitIds.length !== 8 || new Set(seedUnitIds).size !== 8) {
-    throw new EngineError(`${group.name}的8名种子必须分别来自8个不同联合参赛单位。`);
-  }
   return { players, seeds, nonSeeds };
 }
 
@@ -847,20 +843,9 @@ export function batchSetSeeds(state, groupKey, playerIds, seed) {
   }
 
   if (seed) {
-    if (selected.some((player) => !player.unitId)) {
-      throw new EngineError("外院系或未匹配参赛单位的选手不能设为种子。");
-    }
-    const selectedUnits = selected.map((player) => player.unitId);
-    if (new Set(selectedUnits).size !== selectedUnits.length) {
-      throw new EngineError("批量种子里每个参赛单位只能选择一名选手。");
-    }
     const existingSeeds = state.players.filter(
       (player) => player.group === groupKey && player.seed && !uniqueIds.includes(player.id)
     );
-    const combinedUnits = [...existingSeeds.map((player) => player.unitId), ...selectedUnits];
-    if (new Set(combinedUnits).size !== combinedUnits.length) {
-      throw new EngineError("所选选手与已有种子来自同一个参赛单位。");
-    }
     if (existingSeeds.length + selected.length > 8) {
       throw new EngineError(`该组种子不能超过8名；当前已有${existingSeeds.length}名。`);
     }

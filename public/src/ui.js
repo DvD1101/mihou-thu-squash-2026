@@ -473,7 +473,7 @@ function renderDrawCard(state, group, admin) {
                 "尚未抽签",
                 group.level === "new"
                   ? "点击一键随机抽签，生成 4 个小组的预览。"
-                  : "先在名单管理为8个参赛单位各指定1名种子，再生成签表预览。"
+                  : "先在名单管理指定共8名种子，可来自相同或不同参赛单位，再生成签表预览。"
               )
       }
     </div>
@@ -1119,7 +1119,7 @@ function renderPlayersPage({ state, role, selectedGroup }) {
       <div class="card-header">
         <div>
           <h2 class="card-title">${escapeHtml(group.name)} · ${players.length}人</h2>
-          <p class="card-subtitle">${group.level === "advanced" ? `种子 ${players.filter((player) => player.seed).length}/8，须来自8个不同参赛单位` : "前两名晋级八强"}</p>
+          <p class="card-subtitle">${group.level === "advanced" ? `种子 ${players.filter((player) => player.seed).length}/8，每个参赛单位可有多个种子` : "前两名晋级八强"}</p>
         </div>
         ${pageHeaderBadgeForRoster(group, players)}
       </div>
@@ -1421,7 +1421,7 @@ function renderPlayerModal(modal, state) {
         <div class="field"><label>校友积分归属</label><select class="select" name="pointsUnitId"><option value="">随院系映射</option>
           ${state.units.map((entry) => `<option value="${entry.id}" ${entry.id === pointsUnit?.id ? "selected" : ""}>${escapeHtml(entry.name)}</option>`).join("")}
         </select></div>
-        <div class="field full"><label class="check-row"><input type="checkbox" name="seed" ${player?.seed ? "checked" : ""} /> 进阶组种子选手</label><span class="field-hint">只对进阶组有效。每个组必须从8个不同参赛单位各指定1名种子。</span></div>
+        <div class="field full"><label class="check-row"><input type="checkbox" name="seed" ${player?.seed ? "checked" : ""} /> 进阶组种子选手</label><span class="field-hint">只对进阶组有效。每个组共指定8名种子，同一参赛单位可以选择多名。</span></div>
       </div>
     </form>`,
     footer: `${cancelButton()}${actionButton(player ? "保存修改" : "新增选手", "submit-modal", { style: "primary", size: "small" })}`

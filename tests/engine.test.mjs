@@ -287,7 +287,7 @@ test("自动排场满足4片场地、午间禁排和依赖顺序", () => {
   }
 });
 
-test("批量种子遵守8人上限和每种单位1人规则", () => {
+test("同单位可以有多名种子，但每组总数仍不得超过8人", () => {
   const state = createDemoState();
   const players = state.players.filter((player) => player.group === "advanced_men");
   const currentSeeds = players.filter((player) => player.seed);
@@ -299,23 +299,29 @@ test("批量种子遵守8人上限和每种单位1人规则", () => {
   );
   assert.equal(state.players.filter((player) => player.group === "advanced_men" && player.seed).length, 0);
 
-  const onePerUnit = state.units.map((unit) =>
-    players.find((player) => player.unitId === unit.id)
-  );
+  const repeatedUnits = [
+    ...players.filter((player) => player.unitId === state.units[0].id).slice(0, 3),
+    ...players.filter((player) => player.unitId === state.units[1].id).slice(0, 3),
+    ...players.filter((player) => player.unitId === state.units[2].id).slice(0, 2)
+  ];
   batchSetSeeds(
     state,
     "advanced_men",
-    onePerUnit.map((player) => player.id),
+    repeatedUnits.map((player) => player.id),
     true
   );
   assert.equal(state.players.filter((player) => player.group === "advanced_men" && player.seed).length, 8);
-  assert.equal(new Set(onePerUnit.map((player) => player.unitId)).size, 8);
-
-  const sameUnit = players.filter((player) => player.unitId === onePerUnit[0].unitId);
+  const unitCounts = repeatedUnits.reduce((counts, player) => {
+    counts[player.unitId] = (counts[player.unitId] ?? 0) + 1;
+    return counts;
+  }, {});
+  assert.ok(Math.max(...Object.values(unitCounts)) > 1);
+  const ninth = players.find((player) => !player.seed);
   assert.throws(
-    () => batchSetSeeds(state, "advanced_men", sameUnit.map((player) => player.id), true),
-    /每个参赛单位只能选择一名选手/
+    () => batchSetSeeds(state, "advanced_men", [ninth.id], true),
+    /种子不能超过8名/
   );
+  assert.doesNotThrow(() => generateAdvancedPreview(state, "advanced_men"));
 });
 
 test("批量删除阻止删除已进入签表的选手并重置未锁定预览", () => {
