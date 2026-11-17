@@ -81,20 +81,41 @@ const contentTypes = {
   ".woff2": "font/woff2"
 };
 
-function serveStatic(request, url, env) {
+function transformIndexHtml(html) {
+  return html
+    .replaceAll('href="/styles.css"', `href="${EVENT_BASE}/styles.css"`)
+    .replaceAll('href="/src/', `href="${EVENT_BASE}/src/`)
+    .replaceAll('src="/src/', `src="${EVENT_BASE}/src/`);
+}
+
+async function serveStatic(request, url, env) {
   if (url.pathname === "/favicon.ico") {
     return new Response(null, { status: 204 });
   }
-  if (env.ASSETS) return env.ASSETS.fetch(new Request(url.toString(), request));
   const embedded = globalThis.__MIHOU_STATIC_ASSETS__;
-  if (!embedded) return new Response("Static assets are not initialized.", { status: 503 });
   let pathname = url.pathname;
   if (pathname === "/" || pathname === "/view" || pathname.startsWith("/admin/")) {
     pathname = "/index.html";
   }
   const looksLikeAsset =
     /\.[a-z0-9]+$/i.test(pathname) || pathname.startsWith("/src/");
-  if (!embedded[pathname] && !looksLikeAsset) pathname = "/index.html";
+  if (!looksLikeAsset && (!embedded || !embedded[pathname])) pathname = "/index.html";
+  if (env.ASSETS) {
+    const assetUrl = new URL(url.toString());
+    assetUrl.pathname = pathname;
+    const response = await env.ASSETS.fetch(new Request(assetUrl.toString(), request));
+    if (
+      pathname === "/index.html" &&
+      response.headers.get("content-type")?.includes("text/html")
+    ) {
+      return new Response(transformIndexHtml(await response.text()), {
+        status: response.status,
+        headers: response.headers
+      });
+    }
+    return response;
+  }
+  if (!embedded) return new Response("Static assets are not initialized.", { status: 503 });
   let asset = embedded[pathname];
   if (!asset) {
     return new Response("Not found", {
@@ -104,10 +125,7 @@ function serveStatic(request, url, env) {
   }
   const extension = pathname.slice(pathname.lastIndexOf("."));
   if (pathname === "/index.html") {
-    asset = asset
-      .replaceAll('href="/styles.css"', `href="${EVENT_BASE}/styles.css"`)
-      .replaceAll('href="/src/', `href="${EVENT_BASE}/src/`)
-      .replaceAll('src="/src/', `src="${EVENT_BASE}/src/`);
+    asset = transformIndexHtml(asset);
   }
   return new Response(request.method === "HEAD" ? null : asset, {
     status: 200,

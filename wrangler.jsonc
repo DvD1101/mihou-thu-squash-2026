@@ -7,14 +7,28 @@
     "directory": "./public",
     "binding": "ASSETS",
     "not_found_handling": "single-page-application",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": [
+      "/",
+      "/events/2026-thu-nine-school",
+      "/events/2026-thu-nine-school/*"
+    ]
   },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "mihoo_event_state",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "09c0599c-d093-474d-a924-b9798cf4c4c9",
       "migrations_dir": "migrations"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "mihoosquash.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.mihoosquash.com",
+      "custom_domain": true
     }
   ],
   "observability": {

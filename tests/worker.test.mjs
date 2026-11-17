@@ -63,7 +63,10 @@ function environment() {
     ASSETS: {
       fetch(request) {
         const url = new URL(request.url);
-        return new Response(url.pathname === "/view" ? "viewer-index" : "asset");
+        const body = url.pathname === "/index.html" ? "viewer-index" : "asset";
+        return new Response(body, {
+          headers: { "Content-Type": "text/html; charset=utf-8" }
+        });
       }
     }
   };

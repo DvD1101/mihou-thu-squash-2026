@@ -7,12 +7,17 @@
   "dependencies": {
     "@netlify/blobs": "^11.1.9"
   },
+  "devDependencies": {
+    "wrangler": "^4.163.0"
+  },
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
     "test": "node --test tests/*.test.mjs",
     "cloudflare:dev": "wrangler dev",
-    "cloudflare:deploy": "wrangler deploy"
+    "cloudflare:deploy": "wrangler deploy",
+    "cloudflare:migrate": "wrangler d1 migrations apply mihoo_event_state --remote",
+    "cloudflare:restore": "node scripts/restore-json-to-d1.mjs"
   },
   "engines": {
     "node": ">=22"
